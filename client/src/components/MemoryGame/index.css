@@ -162,40 +162,22 @@
     width: 18px;
 }
 
-#modal {
+.modal {
     position: absolute;
     background: rgba(255, 255, 255, 0.623);
     height: 100%;
     width: 100%;
-    display: none;
+    visibility: hidden;
+    display: flex;
+    opacity: 0;
     align-items: center;
     justify-content: center;
+    transition: all 0.5s;
 }
 
 .fade-in {
-    animation: fadeIn 0.5s ease-out;
-}
-
-.hide {
-    animation: fadeOut 0.5s ease-in;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeOut {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
+    opacity: 1;
+    visibility: visible;
 }
 
 .modal__content {
@@ -232,12 +214,12 @@
     cursor: pointer;
 }
 
-.modal__content button::after {
+/* .modal__content button::after {
     content: "";
     display: block;
-    /* background: url(../icons/arrow.svg); */
+    background: url(../icons/arrow.svg);
     background-size: contain;
     height: 20px;
     width: 20px;
     margin-left: 0.5em;
-}
+} */

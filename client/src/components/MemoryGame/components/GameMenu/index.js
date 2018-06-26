@@ -25,7 +25,8 @@ class GameMenu extends Component {
     }
 
     render() {
-        const { arrowIcon, emptyStarIcon, filledStarIcon, refreshIcon } = this.props
+        // const { arrowIcon, emptyStarIcon, filledStarIcon, refreshIcon } = this.props
+        const { filledStarIcon, refreshIcon } = this.props
         const refreshIconStyle = {
             backgroundImage: `url(${refreshIcon})`,
             backgroundSize: 'contain',
@@ -38,10 +39,16 @@ class GameMenu extends Component {
         const star3Style = this.getStarStyle(filledStarIcon)
         return (
             <div className="game__menu">
-                <span style={refreshIconStyle} className="reset-icon" id="reset-btn"></span>
-                <span id="timer"></span>
+                <span 
+                    style={refreshIconStyle} 
+                    className="reset-icon" 
+                    id="reset-btn"
+                    onClick={this.props.handleReset}
+                >
+                </span>
+                <span id="timer">{this.props.timerText}</span>
                 <div className="game__stats">
-                    <span id="stats__moves"></span>
+                    <span id="stats__moves">{this.props.moveCounterText}</span>
                     <span className="stats__stars">
                         <span style={star1Style} className="star filled-star" id="star1"></span>
                         <span style={star2Style} className="star" id="star2"></span>
