@@ -1,11 +1,12 @@
-import React from 'react';
+import React from 'react'
+import MemoryGame from './components/MemoryGame'
 
 const App = () => {
     return (
-        <div>
-            
+        <div className="wrapper">
+            <MemoryGame />
         </div>
     )
 }
 
-export default App;
+export default App
