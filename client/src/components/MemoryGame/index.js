@@ -5,7 +5,7 @@ import GameGrid from './components/GameGrid'
 import WinModal from './components/WinModal'
 
 import arrowIcon from './icons/arrow.svg'
-// import emptyStarIcon from './icons/empty-star.svg'
+import emptyStarIcon from './icons/empty-star.svg'
 import filledStarIcon from './icons/filled-star.svg'
 import refreshIcon from './icons/refresh.svg'
 
@@ -171,21 +171,15 @@ class MemoryGame extends Component {
     updateMovesAndStars = (moves) => {
         const moveCounterText = moves === 1 ? `${moves} Move` : `${moves} Moves`
         this.setState({ moveCounterText })
-        // gameState.stars = moves < 17 ? 3 : moves < 22 ? 2 : 1
-        // if (gameState.stars === 3) {
-        //     starTwo.classList.add('filled-star');
-        //     starTwo.classList.remove('empty-star');
-        //     starThree.classList.add('filled-star');
-        //     starThree.classList.remove('empty-star');
-        // }
-        // if (gameState.stars === 2) {
-        //     starThree.classList.remove('filled-star');
-        //     starThree.classList.add('empty-star');
-        // }
-        // if (gameState.stars === 1) {
-        //     starTwo.classList.remove('filled-star')
-        //     starTwo.classList.add('empty-star')
-        // }
+        if (moves < 14) {
+            this.setState({ stars: 3 })
+        } else {
+            if (moves < 18) {
+                this.setState({ stars: 2 })
+            } else {
+                this.setState({ stars: 1 })
+            }
+        }
     }
 
     startTimer = () => {
@@ -290,8 +284,7 @@ class MemoryGame extends Component {
     }
 
     render() {
-        // const icons = { arrowIcon, emptyStarIcon, filledStarIcon, refreshIcon }
-        const icons = { filledStarIcon, refreshIcon }
+        const icons = { arrowIcon, emptyStarIcon, filledStarIcon, refreshIcon }
         return (
             <div className="memory-game__wrapper">
                 <div className="game__wrapper">
@@ -300,6 +293,7 @@ class MemoryGame extends Component {
                         timerText={this.state.timerText}
                         moveCounterText={this.state.moveCounterText}
                         handleReset={this.handleReset}
+                        stars={this.state.stars}
                     />
                     <GameGrid gridShuffled={this.state.gridShuffled} />
                 </div>

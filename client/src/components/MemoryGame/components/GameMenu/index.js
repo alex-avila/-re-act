@@ -1,17 +1,6 @@
 import React, { Component } from 'react';
 
 class GameMenu extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            // Instead of filled, put something else
-            // that makes more sense with the logic
-            star1: 'filled',
-            star2: 'filled',
-            star3: 'filled',
-        }
-    }
-
     getStarStyle = starIcon => {
         return {
             backgroundImage: `url(${starIcon})`,
@@ -25,8 +14,7 @@ class GameMenu extends Component {
     }
 
     render() {
-        // const { arrowIcon, emptyStarIcon, filledStarIcon, refreshIcon } = this.props
-        const { filledStarIcon, refreshIcon } = this.props
+        const { emptyStarIcon, filledStarIcon, refreshIcon } = this.props
         const refreshIconStyle = {
             backgroundImage: `url(${refreshIcon})`,
             backgroundSize: 'contain',
@@ -34,9 +22,22 @@ class GameMenu extends Component {
             width: 24,
             cursor: 'pointer'
         }
-        const star1Style = this.getStarStyle(filledStarIcon)
-        const star2Style = this.getStarStyle(filledStarIcon)
-        const star3Style = this.getStarStyle(filledStarIcon)
+        let star1Style
+        let star2Style
+        let star3Style
+        if (this.props.stars === 3) {
+            star1Style = this.getStarStyle(filledStarIcon)
+            star2Style = this.getStarStyle(filledStarIcon)
+            star3Style = this.getStarStyle(filledStarIcon)
+        } else if (this.props.stars === 2) {
+            star1Style = this.getStarStyle(filledStarIcon)
+            star2Style = this.getStarStyle(filledStarIcon)
+            star3Style = this.getStarStyle(emptyStarIcon)
+        } else {
+            star1Style = this.getStarStyle(filledStarIcon)
+            star2Style = this.getStarStyle(emptyStarIcon)
+            star3Style = this.getStarStyle(emptyStarIcon)
+        }
         return (
             <div className="game__menu">
                 <span 
