@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Switch, Route } from "react-router-dom";
 
 import MemoryGame from './components/MemoryGame'
+import TicTacToe from './components/TicTacToe/Game'
 
 class App extends Component {
   render() {
@@ -14,7 +15,8 @@ class App extends Component {
           <Route path='/CardMatch' Component={MemoryGame} />
           <Route path='/ColorGuess' Component={ColorGuess} />
         </Switch> */}
-        <MemoryGame />
+        {/* <MemoryGame /> */}
+        <TicTacToe />
         {/* <Foot /> */}
       </div>
     );
