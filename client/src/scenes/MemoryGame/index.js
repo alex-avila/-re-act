@@ -299,6 +299,7 @@ class MemoryGame extends Component {
                 </div>
                 <WinModal
                     handleHideModal={this.hanldleHideModal}
+                    reset={this.handleReset}
                     {...this.state.winModalData}
                     arrowIcon={arrowIcon}
                     stars={this.state.stars}
