@@ -21,7 +21,11 @@ class WinModal extends Component {
                 <div className="modal__content">
                     <h3>YOU WIN</h3>
                     <p>You won in <span id="time-result">{this.props.timeResultText}</span> with <span id="star-result">{this.props.starResultText}</span> stars</p>
-                    <button id="play-again">
+                    <button id="play-again" onClick={e => {
+                        this.props.handleHideModal(e)
+                        this.props.reset()
+                        }
+                    }>
                         PLAY AGAIN
                         <div style={arrowIconStyle}></div>
                     </button>

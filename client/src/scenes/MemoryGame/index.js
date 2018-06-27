@@ -53,7 +53,7 @@ class MemoryGame extends Component {
                     time.getUTCMinutes() ?
                     <React.Fragment>
                         <span>{time.getUTCMinutes()}</span>
-                        <span class="time-unit">m</span>
+                        <span className="time-unit">m</span>
                         <span>{defaultText}</span>
                     </React.Fragment> :
                     <span>{defaultText}</span>
@@ -119,6 +119,9 @@ class MemoryGame extends Component {
             this.startTimer();
         }
 
+        console.log(card.dataset.matched)
+        console.log(this.state.isChecking)
+        console.log(this.state.firstCard)
         if (!card.dataset.matched && !this.state.isChecking) {
             if (!this.state.firstCard) {
                 this.setState(
@@ -148,6 +151,8 @@ class MemoryGame extends Component {
                 this.setState({ win: true })
                 this.win()
             }
+            firstCard.classList.remove('bounce')
+            secondCard.classList.remove('bounce')
         } else {
             firstCard.classList.add('wiggle')
             secondCard.classList.add('wiggle')
@@ -222,28 +227,17 @@ class MemoryGame extends Component {
         // Set initial values
         this.updateMovesAndStars(this.state.moves)
         this.updateTimer(this.state.timer)
-
-        // playAgain.addEventListener('click', () => {
-        //     hideModal()
-        //     reset()
-        // })
-
-        // window.addEventListener('click', (e) => {
-        //     if (e.target === modal) {
-        //         hideModal()
-        //     }
-        // })
     }
 
     flipBackCards = () => {
         for (let card of document.getElementsByClassName('card')) {
             if (card.dataset.matched) {
-                card.classList.toggle('flipped')
-                card.dataset.matched = false
+                delete card.dataset.matched
+                card.classList.remove('flipped')
             }
         }
         if (this.state.firstCard) {
-            this.state.firstCard.classList.toggle('flipped')
+            this.state.firstCard.classList.remove('flipped')
         }
     }
 
@@ -266,10 +260,6 @@ class MemoryGame extends Component {
                 setTimeout(this.generateCards, 500)
             }
         )
-
-    //     this.updateTimer(this.state.timer)
-    //     this.updateMovesAndStars(this.state.moves)
-    //     setTimeout(this.generateCards, 500)
     }
 
     hanldleHideModal = e => {
@@ -299,6 +289,7 @@ class MemoryGame extends Component {
                 </div>
                 <WinModal
                     handleHideModal={this.hanldleHideModal}
+                    reset={this.handleReset}
                     {...this.state.winModalData}
                     arrowIcon={arrowIcon}
                     stars={this.state.stars}
