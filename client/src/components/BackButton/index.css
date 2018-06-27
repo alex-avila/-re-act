@@ -1,0 +1,19 @@
+.important-back-button {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    outline: none;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid black;
+    transition: 0.33s ease-in-out;
+    cursor: pointer;
+}
+
+.important-back-button:hover {
+    opacity: 1;
+}
+
+.dimmed {
+    opacity: 0.4;
+}
