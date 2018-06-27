@@ -9,7 +9,6 @@ class Home extends Component {
             <div className="home">
                 <h1>Hoi</h1>
                 <div className="home__games-list">
-                    <Link to='/'>Home</Link>
                     <Link to='/TicTacToe'>TickTackToe Game!^.^</Link>
                     <Link to='/cardMatch'>Card match game!^.^</Link>
                     <Link to='/ColorGuess'>Guess that RGB color!^.^</Link>
