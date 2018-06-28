@@ -151,8 +151,12 @@ class MemoryGame extends Component {
                 this.setState({ win: true })
                 this.win()
             }
-            firstCard.classList.remove('bounce')
-            secondCard.classList.remove('bounce')
+            window.requestAnimationFrame(() => {
+                setTimeout(() => {
+                    firstCard.classList.remove('bounce')
+                    secondCard.classList.remove('bounce')
+                }, 500)
+            })
         } else {
             firstCard.classList.add('wiggle')
             secondCard.classList.add('wiggle')
