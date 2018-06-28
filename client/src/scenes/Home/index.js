@@ -12,6 +12,7 @@ class Home extends Component {
                     <Link to='/TicTacToe'>TickTackToe Game!^.^</Link>
                     <Link to='/cardMatch'>Card match game!^.^</Link>
                     <Link to='/ColorGuess'>Guess that RGB color!^.^</Link>
+                    <Link to ='/RPS'>Legendary Battle Simulator</Link>
                 </div>
             </div>
         )
