@@ -1,0 +1,4 @@
+.home__games-list {
+    display: flex;
+    flex-direction: column;
+}

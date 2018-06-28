@@ -1,0 +1,18 @@
+.games__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item__info {
+    display: flex;
+    align-items: center;
+}
+
+.item__info__icon {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background: black;
+    margin-right: 1em;
+}
