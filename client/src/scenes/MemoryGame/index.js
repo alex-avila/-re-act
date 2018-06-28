@@ -112,16 +112,13 @@ class MemoryGame extends Component {
     }
 
     handleFlip = e => {
-        const condition = [...e.target.classList].includes(className => className === 'card')
+        const condition = e.target.classList.length === 1
         const card = condition ? e.target : e.target.parentElement
 
         if (this.state.moves === 0) {
             this.startTimer();
         }
 
-        console.log(card.dataset.matched)
-        console.log(this.state.isChecking)
-        console.log(this.state.firstCard)
         if (!card.dataset.matched && !this.state.isChecking) {
             if (!this.state.firstCard) {
                 this.setState(
