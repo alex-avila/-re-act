@@ -21,6 +21,7 @@ class App extends Component {
           <Route path='/TicTacToe' component={TicTacToe} />
           <Route path='/cardMatch' component={MemoryGame} />
           {/* <Route path='/ColorGuess' Component={ColorGuess} /> */}
+          {/* <Route path='=RPS'  Component={RPS} */}
         </Switch>
       </div>
     );
