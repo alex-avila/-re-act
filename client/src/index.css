@@ -9,7 +9,11 @@ body,
     margin: 0;
     height: 100%;
     font-family: 'Avenir', 'Arial', sans-serif;
-    font-weight: 600;
     font-size: 18px;
     color: black;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
