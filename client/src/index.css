@@ -9,7 +9,17 @@ body,
     margin: 0;
     height: 100%;
     font-family: 'Avenir', 'Arial', sans-serif;
-    font-weight: 600;
     font-size: 18px;
     color: black;
+}
+
+.utility-wrapper {
+    max-width: 800px;
+    margin: auto;
+    padding: 0 1.618em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }

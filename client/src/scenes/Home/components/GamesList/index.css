@@ -1,4 +1,5 @@
 .home__games-list {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    gap: 2em 3.75em;
+    grid-template-columns: repeat(auto-fit, minmax(233px, 1fr));
 }

@@ -9,7 +9,6 @@ class Home extends Component {
         return (
             <div className="home">
                 {/* Featured item */}
-                <h1>Hoi</h1>
                 <GamesList games={this.props.games}/>
             </div>
         )

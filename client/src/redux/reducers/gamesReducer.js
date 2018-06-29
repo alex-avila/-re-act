@@ -1,7 +1,7 @@
 const games = [
     { name: 'Tic Tac Toe', url: 'ticTacToe' },
     { name: 'Memory Game', url: 'cardMatch' },
-    { name: 'Rock Paper Scissors 5000', url: 'RPS' },
+    { name: 'Rock Paper Scissors', url: 'RPS' },
     { name: 'Color Guess', url: 'colorGuess' },
 ]
 

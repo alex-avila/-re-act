@@ -1,20 +1,20 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+
+import { connect } from 'react-redux'
+
+import './index.css'
 
 class GameView extends Component {
-    componentDidMount() {
-        // Go to redux or whatever and get the data to display this page.
-    }
-
     render() {
+        const game = this.props.games.find(game => game.url === this.props.match.params.id)
         return (
-            <div>
-                <div>Game data goes here</div>
-                <div>{this.props.match.params.id}</div>
+            <div className="game-view utility-wrapper">
+                {
+                    game && 
+                    <h1>{game.name}</h1>
+                }
                 <div>
                     {/* Image */}
-                </div>
-                <div>
-                    {/* Title */}
                 </div>
                 <div>
                     {/* Link to play */}
@@ -22,12 +22,9 @@ class GameView extends Component {
                 <div>
                     {/* Description/Article */}
                 </div>
-                <div>
-
-                </div>
             </div>
-        );
+        )
     }
 }
 
-export default GameView;
+export default connect(state => ({games: state.games}), {})(GameView)
