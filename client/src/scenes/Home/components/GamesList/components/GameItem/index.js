@@ -4,14 +4,13 @@ import { Link } from 'react-router-dom'
 
 import Button from '../../../../../../components/Button'
 
-import ticTacToeIcon from '../../../../icons/tictactoe.svg'
-
 import './index.css'
 
 class GameLink extends Component {
     render() {
-        const iconStyle = {
-            background: `url(${ticTacToeIcon})`,
+        const { name, url, icon } = this.props
+        let iconStyle = {
+            background: `url(${icon})`,
             backgroundSize: 'contain',
             backgroundRepeat: 'no-repeat',
             height: 60,
@@ -19,7 +18,9 @@ class GameLink extends Component {
             display: 'inline-block',
             borderRadius: 10
         }
-        const { name, url } = this.props
+        if (url === 'cardMatch') {
+            iconStyle = {...iconStyle, border: '1px solid black'}
+        }
         return (
             <div className="games__item">
                 <Link to={url} className="item__info">
