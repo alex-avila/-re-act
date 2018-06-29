@@ -1,15 +1,27 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import styled from 'styled-components'
 
-const StyledButton = styled.button`
+const BaseButton = styled.button`
     background: none;
-    border: 1px solid #aa9fff;
-    color: #aa9fff;
+    border: none;
+    outline: none;
     font-size: inherit;
-    padding: 0.4em 0.8em;
-    border-radius: 7px;
     cursor: pointer;
     transition: all 0.5s;
+`
+
+const BasicButton = BaseButton.extend`
+    color: #aa9fff;
+    &:hover {
+        filter: contrast(0.5);
+    }
+`
+
+const GhostButton = BaseButton.extend`
+    border: 1px solid #aa9fff;
+    color: #aa9fff;
+    padding: 0.4em 0.8em;
+    border-radius: 7px;
     &:hover {
         background: #aa9fff;
         color: white;
@@ -19,9 +31,17 @@ const StyledButton = styled.button`
 class Button extends Component {
     render() {
         return (
-            <StyledButton>
-                {this.props.children}
-            </StyledButton>
+            <Fragment>
+                {
+                    this.props.basic ?
+                        <BasicButton border="none">
+                            {this.props.children}
+                        </BasicButton> :
+                        <GhostButton border="none">
+                            {this.props.children}
+                        </GhostButton>
+                }
+            </Fragment>
         )
     }
 }

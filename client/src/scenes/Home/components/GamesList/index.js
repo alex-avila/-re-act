@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 
 import GameItem from './components/GameItem'
 
+import './index.css'
+
 class GamesList extends Component {
     render() {
         const { games } = this.props
