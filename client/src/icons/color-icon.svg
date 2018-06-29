@@ -1,0 +1,29 @@
+<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="50" height="50">
+<rect width="50" height="50" fill="url(#paint0_linear)"/>
+</mask>
+<g mask="url(#mask0)">
+<path d="M0 0H12.5V12.5H0V0Z" transform="translate(12.5)" fill="#81ECEC"/>
+<path d="M0 0H12.5V12.5H0V0Z" fill="#55EFC4"/>
+<path d="M0 0H12.5V12.5H0V0Z" transform="translate(25)" fill="#74B9FF"/>
+<path d="M0 0H12.5V12.5H0V0Z" transform="translate(37.5)" fill="#A29BFE"/>
+<path d="M0 0H12.5V12.5H0V0Z" transform="translate(12.5 12.5)" fill="#00CEC9"/>
+<path d="M0 0H12.5V12.5H0V0Z" transform="translate(0 12.5)" fill="#00B894"/>
+<path d="M0 0H12.5V12.5H0V0Z" transform="translate(25 12.5)" fill="#0984E3"/>
+<path d="M0 0H12.5V12.5H0V0Z" transform="translate(37.5 12.5)" fill="#6C5CE7"/>
+<path d="M0 0H12.5V12.5H0V0Z" transform="translate(12.5 25)" fill="#FAB1A0"/>
+<path d="M0 0H12.5V12.5H0V0Z" transform="translate(0 25)" fill="#FFEAA7"/>
+<path d="M0 0H12.5V12.5H0V0Z" transform="translate(25 25)" fill="#FF7675"/>
+<path d="M0 0H12.5V12.5H0V0Z" transform="translate(37.5 25)" fill="#FD79A8"/>
+<path d="M0 0H12.5V12.5H0V0Z" transform="translate(12.5 37.5)" fill="#E17055"/>
+<path d="M0 0H12.5V12.5H0V0Z" transform="translate(0 37.5)" fill="#FDCB6E"/>
+<path d="M0 0H12.5V12.5H0V0Z" transform="translate(25 37.5)" fill="#D63031"/>
+<path d="M0 0H12.5V12.5H0V0Z" transform="translate(37.5 37.5)" fill="#E84393"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(50) scale(50) rotate(90)">
+<stop stop-color="#81D1FF"/>
+<stop offset="1" stop-color="#BFA9FF"/>
+</linearGradient>
+</defs>
+</svg>
