@@ -1,0 +1,15 @@
+.games__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item__info {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    align-items: center;
+}
+
+.item__info__title {
+    margin-left: 1em;
+}

@@ -1,31 +1,54 @@
 import React, { Component } from 'react';
-import { Switch, Route, Link, withRouter } from "react-router-dom";
+import { Switch, Route, Link, withRouter } from "react-router-dom"
+
+import { connect } from 'react-redux'
+import { getGames } from './redux/reducers/gamesReducer'
 
 import Home from './scenes/Home'
 import MemoryGame from './scenes/MemoryGame'
 import TicTacToe from './scenes/TicTacToe/Game'
-import BackButton from './components/BackButton';
+import BackButton from './components/BackButton'
+import GameView from './scenes/GameView'
+import Navbar from './components/Navbar';
+
 
 class App extends Component {
-  render() {
-    return (
-      <div className="wrapper">
-        {
-          this.props.location.pathname !== '/' &&
-          <Link to="/">
-            <BackButton />
-          </Link>
-        }
-        <Switch>
-          <Route exact path='/' component={Home} />
-          <Route path='/TicTacToe' component={TicTacToe} />
-          <Route path='/cardMatch' component={MemoryGame} />
-          {/* <Route path='/ColorGuess' Component={ColorGuess} /> */}
-          {/* <Route path='=RPS'  Component={RPS} */}
-        </Switch>
-      </div>
-    );
-  }
+	componentDidMount() {
+		this.props.getGames()
+	}
+
+	render() {
+		const pathArr = this.props.location.pathname.split('/')
+		console.log()
+		const { games } = this.props
+		return (
+			<div className="wrapper">
+
+				{
+					pathArr.includes('play') ?
+						<Link to="/">
+							<BackButton />
+						</Link> :
+						<Navbar />
+				}
+
+				<Switch>
+					{/* Home */}
+					<Route exact path="/" render={(props) => <Home games={games} {...props} />} />
+
+					{/* All games share this as the details page */}
+					<Route exact path="/:id" render={(props) => <GameView {...props} />} />
+
+					{/* Games */}
+					<Route path="/TicTacToe/play" component={TicTacToe} />
+					<Route path="/cardMatch/play" component={MemoryGame} />
+					{/* <Route path='/ColorGuess' Component={ColorGuess} /> */}
+					{/* <Route path='=RPS'  Component={RPS} */}
+				</Switch>
+
+			</div>
+		)
+	}
 }
 
-export default withRouter(App)
+export default withRouter(connect(state => ({ games: state.games }), { getGames })(App))

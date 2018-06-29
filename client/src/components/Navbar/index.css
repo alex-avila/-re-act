@@ -1,0 +1,9 @@
+.navbar__wrapper {
+    padding: 1.618em 0 2em;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
