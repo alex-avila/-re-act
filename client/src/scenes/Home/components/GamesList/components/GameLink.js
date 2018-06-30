@@ -16,7 +16,8 @@ class GameLink extends Component {
             height: 60,
             width: 60,
             display: 'inline-block',
-            boxShadow: '0 2px 1px rgba(0, 0, 0, 0.25)'
+            boxShadow: '0 2px 4px rgba(0, 0, 0, 0.2)',
+            borderRadius: 5
         }
         if (url === 'cardMatch') {
             iconStyle = { ...iconStyle, border: '1px solid black' }

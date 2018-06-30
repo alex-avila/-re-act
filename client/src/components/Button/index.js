@@ -22,9 +22,13 @@ const GhostButton = BaseButton.extend`
     border: 1px solid #E4C7FF;
     color: #E4C7FF;
     padding: 0.414em 0.828em;
-    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
+    box-shadow: 
+        0px 2px 6px rgba(0, 0, 0, 0.15),
+        0 6px 15px -5px rgba(161, 120, 255, 0.25)
+    ;
     &:hover {
-        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.33);
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.33);
+        box-shadow: 0 6px 15px -5px rgba(161, 120, 255, 0.5);
     }
 `
 
