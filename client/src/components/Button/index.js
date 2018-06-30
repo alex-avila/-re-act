@@ -7,7 +7,7 @@ const BaseButton = styled.button`
     outline: none;
     font-size: inherit;
     cursor: pointer;
-    transition: all 0.5s;
+    transition: all 0.25s;
 `
 
 const BasicButton = BaseButton.extend`
@@ -27,8 +27,8 @@ const GhostButton = BaseButton.extend`
         0 6px 15px -5px rgba(161, 120, 255, 0.25)
     ;
     &:hover {
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.33);
-        box-shadow: 0 6px 15px -5px rgba(161, 120, 255, 0.5);
+        background: #E4C7ff;
+        color: #2f2e39;
     }
 `
 
