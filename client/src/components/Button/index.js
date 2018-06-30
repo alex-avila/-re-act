@@ -18,7 +18,7 @@ const BasicButton = BaseButton.extend`
 `
 
 const GhostButton = BaseButton.extend`
-    background: #333333;
+    background: #2F2E39;
     border: 1px solid #E4C7FF;
     color: #E4C7FF;
     padding: 0.414em 0.828em;
