@@ -10,7 +10,8 @@ body,
     height: 100%;
     font-family: 'Avenir', 'Arial', sans-serif;
     font-size: 18px;
-    color: black;
+    background: #4f4f4f;
+    color: #fff;
 }
 
 .utility-wrapper {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import GameItem from './components/GameItem'
+import GameItem from './components/GameLink'
 
 import './index.css'
 
