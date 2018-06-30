@@ -1,21 +1,14 @@
-
-<svg width="152px" height="152px" viewBox="0 0 152 152" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
-    <desc>Created with Sketch.</desc>
-    <defs>
-        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
-            <stop stop-color="#A0EAFF" offset="0%"></stop>
-            <stop stop-color="#BACEFF" offset="100%"></stop>
-        </linearGradient>
-    </defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Artboard" transform="translate(-85.000000, -85.000000)">
-            <rect id="Rectangle" fill="url(#linearGradient-1)" x="85" y="85" width="152" height="152" rx="12"></rect>
-            <path d="M142.5,104.5 L142.5,217.5" id="Line" stroke="#FFFFFF" stroke-width="6" stroke-linecap="square"></path>
-            <path d="M161,86 L161,199" id="Line-Copy" stroke="#FFFFFF" stroke-width="6" stroke-linecap="square" transform="translate(161.000000, 142.500000) rotate(90.000000) translate(-161.000000, -142.500000) "></path>
-            <path d="M161,123 L161,236" id="Line-Copy-2" stroke="#FFFFFF" stroke-width="6" stroke-linecap="square" transform="translate(161.000000, 179.500000) rotate(90.000000) translate(-161.000000, -179.500000) "></path>
-            <path d="M179.5,216.5 L179.5,104.5" id="Line-2" stroke="#FFFFFF" stroke-width="6" stroke-linecap="square"></path>
-            <circle id="Oval" stroke="#FFFFFF" stroke-width="5" cx="119" cy="120" r="10"></circle>
-        </g>
-    </g>
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="40" height="40" fill="url(#paint0_linear)"/>
+<path d="M5.775 3.2C5.775 4.62213 4.62213 5.775 3.2 5.775C1.77787 5.775 0.625 4.62213 0.625 3.2C0.625 1.77787 1.77787 0.625 3.2 0.625C4.62213 0.625 5.775 1.77787 5.775 3.2Z" transform="translate(5.59998 5.6)" stroke="white" stroke-width="1.25"/>
+<line y1="-0.75" x2="31.2" y2="-0.75" transform="translate(14.4 4) rotate(90)" stroke="white" stroke-width="1.5"/>
+<line y1="-0.75" x2="31.2" y2="-0.75" transform="translate(35.2 14.4) rotate(180)" stroke="white" stroke-width="1.5"/>
+<line y1="-0.75" x2="31.2" y2="-0.75" transform="translate(35.2 24) rotate(180)" stroke="white" stroke-width="1.5"/>
+<line y1="-0.75" x2="31.2" y2="-0.75" transform="translate(24 4) rotate(90)" stroke="white" stroke-width="1.5"/>
+<defs>
+<linearGradient id="paint0_linear" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(21.75 -24.75) scale(57.9353) rotate(64.9831)">
+<stop stop-color="#8FDDFF"/>
+<stop offset="1" stop-color="#B4A1FF"/>
+</linearGradient>
+</defs>
 </svg>

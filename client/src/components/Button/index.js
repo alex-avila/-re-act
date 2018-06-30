@@ -11,20 +11,20 @@ const BaseButton = styled.button`
 `
 
 const BasicButton = BaseButton.extend`
-    color: #aa9fff;
+    color: #E4C7FF;
     &:hover {
-        filter: contrast(0.5);
+        color: #F4D7FF;
     }
 `
 
 const GhostButton = BaseButton.extend`
-    border: 1px solid #aa9fff;
-    color: #aa9fff;
-    padding: 0.4em 0.8em;
-    border-radius: 7px;
+    background: #333333;
+    border: 1px solid #E4C7FF;
+    color: #E4C7FF;
+    padding: 0.414em 0.828em;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
     &:hover {
-        background: #aa9fff;
-        color: white;
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.33);
     }
 `
 

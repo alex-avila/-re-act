@@ -1,5 +1,5 @@
 .home__games-list {
     display: grid;
-    gap: 2em 3.75em;
+    gap: 2.618em 4em;
     grid-template-columns: repeat(auto-fit, minmax(233px, 1fr));
 }

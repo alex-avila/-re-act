@@ -10,6 +10,18 @@
     align-items: center;
 }
 
-.item__info__title {
+.item__info__text {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 1fr 1fr;
     margin-left: 1em;
+}
+
+.item__info__title {
+    margin-top: 5px;
+}
+
+.item__info__addtl-info {
+    color: #e0e0e0;
+    font-size: 0.75em;
 }
