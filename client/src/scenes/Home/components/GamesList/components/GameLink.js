@@ -19,7 +19,7 @@ class GameLink extends Component {
             boxShadow: '0 2px 1px rgba(0, 0, 0, 0.25)'
         }
         if (url === 'cardMatch') {
-            iconStyle = {...iconStyle, border: '1px solid black'}
+            iconStyle = { ...iconStyle, border: '1px solid black' }
         }
         return (
             <div className="games__item">
