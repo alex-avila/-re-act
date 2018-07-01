@@ -11,24 +11,21 @@ const BaseButton = styled.button`
 `
 
 const BasicButton = BaseButton.extend`
-    color: #E4C7FF;
+    color: #FDACFD;
     &:hover {
         color: #F4D7FF;
     }
 `
 
 const GhostButton = BaseButton.extend`
-    background: #2F2E39;
-    border: 1px solid #E4C7FF;
-    color: #E4C7FF;
+    background: #2E204A;
+    border: 1px solid #FDACFD;
+    color: #FDACFD;
     padding: 0.414em 0.828em;
-    box-shadow: 
-        0px 2px 6px rgba(0, 0, 0, 0.15),
-        0 6px 15px -5px rgba(161, 120, 255, 0.25)
-    ;
+    box-shadow: 0 3px 6px #362555;
     &:hover {
-        background: #E4C7ff;
-        color: #2f2e39;
+        background: #FDACFD;
+        color: #2E204A;
     }
 `
 

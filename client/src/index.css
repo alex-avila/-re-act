@@ -10,8 +10,8 @@ body,
     height: 100%;
     font-family: 'Avenir', 'Arial', sans-serif;
     font-size: 18px;
-    background: linear-gradient(333.98deg, #494157 -22.37%, #443E4C 101.98%);
-    color: #fff;
+    background: linear-gradient(#5D4C79, #51436A);
+    color: #FEEAFF;
 }
 
 .utility-wrapper {

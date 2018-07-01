@@ -1,6 +1,7 @@
 import ticTacToeIcon from '../../icons/tic-tac-toe-icon.svg'
 import memoryGameIcon from '../../icons/memory-icon.svg'
 import colorGuessIcon from '../../icons/color-icon.svg'
+import rpsIcon from '../../icons/rps-icon.svg'
 
 const games = [
     {
@@ -21,7 +22,7 @@ const games = [
     {
         name: 'Rock Paper Scissors',
         url: 'RPS',
-        icon: colorGuessIcon
+        icon: rpsIcon
     },
 ]
 

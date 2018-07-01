@@ -1,14 +1,37 @@
-<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="40" height="40" fill="url(#paint0_linear)"/>
-<path d="M5.775 3.2C5.775 4.62213 4.62213 5.775 3.2 5.775C1.77787 5.775 0.625 4.62213 0.625 3.2C0.625 1.77787 1.77787 0.625 3.2 0.625C4.62213 0.625 5.775 1.77787 5.775 3.2Z" transform="translate(5.59998 5.6)" stroke="white" stroke-width="1.25"/>
-<line y1="-0.75" x2="31.2" y2="-0.75" transform="translate(14.4 4) rotate(90)" stroke="white" stroke-width="1.5"/>
-<line y1="-0.75" x2="31.2" y2="-0.75" transform="translate(35.2 14.4) rotate(180)" stroke="white" stroke-width="1.5"/>
-<line y1="-0.75" x2="31.2" y2="-0.75" transform="translate(35.2 24) rotate(180)" stroke="white" stroke-width="1.5"/>
-<line y1="-0.75" x2="31.2" y2="-0.75" transform="translate(24 4) rotate(90)" stroke="white" stroke-width="1.5"/>
-<defs>
-<linearGradient id="paint0_linear" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(21.75 -24.75) scale(57.9353) rotate(64.9831)">
-<stop stop-color="#8FDDFF"/>
-<stop offset="1" stop-color="#B4A1FF"/>
-</linearGradient>
-</defs>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #fff;
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#91c4ff"/>
+      <stop offset="1" stop-color="#c09fff"/>
+    </linearGradient>
+  </defs>
+  <g id="Tic_Tac_Toe_Icon" data-name="Tic Tac Toe Icon" transform="translate(-26 -97)">
+    <rect id="Rectangle_1" data-name="Rectangle 1" class="cls-1" width="60" height="60" transform="translate(26 97)"/>
+    <line id="Line_1" data-name="Line 1" class="cls-2" y1="42" transform="translate(50.5 106.5)"/>
+    <line id="Line_4" data-name="Line 4" class="cls-2" y1="42" transform="translate(77.5 121.5) rotate(90)"/>
+    <line id="Line_2" data-name="Line 2" class="cls-2" y1="42" transform="translate(62.5 106.5)"/>
+    <line id="Line_3" data-name="Line 3" class="cls-2" y1="42" transform="translate(77.5 133.5) rotate(90)"/>
+    <g id="Ellipse_1" data-name="Ellipse 1" class="cls-2" transform="translate(37 108)">
+      <circle class="cls-3" cx="4.5" cy="4.5" r="4.5"/>
+      <circle class="cls-4" cx="4.5" cy="4.5" r="3.5"/>
+    </g>
+  </g>
 </svg>
