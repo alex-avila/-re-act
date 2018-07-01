@@ -1,0 +1,466 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #292038;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #402036;
+      }
+
+      .cls-4 {
+        fill: #d24449;
+      }
+
+      .cls-5 {
+        fill: #ec6641;
+      }
+
+      .cls-6 {
+        fill: #f3a65d;
+      }
+
+      .cls-7 {
+        fill: #fef28c;
+      }
+
+      .cls-8 {
+        filter: url(#Rectangle_7-2);
+      }
+
+      .cls-9 {
+        filter: url(#Rectangle_7);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1" data-name="Rectangle 1" class="cls-1" width="60" height="60" transform="translate(26 97)"/>
+    </clipPath>
+    <filter id="Rectangle_7" x="27" y="39" width="21" height="21" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_7-2" x="27" y="42" width="21" height="21" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Mask_Group_2" data-name="Mask Group 2" class="cls-2" transform="translate(-26 -97)">
+    <g id="Fire" transform="translate(-4)">
+      <rect id="Rectangle_7-3" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(30 97)"/>
+      <rect id="Rectangle_7-4" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(33 97)"/>
+      <rect id="Rectangle_7-5" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(36 97)"/>
+      <rect id="Rectangle_7-6" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(39 97)"/>
+      <rect id="Rectangle_7-7" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(42 97)"/>
+      <rect id="Rectangle_7-8" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(45 97)"/>
+      <rect id="Rectangle_7-9" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(48 97)"/>
+      <rect id="Rectangle_7-10" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(51 97)"/>
+      <rect id="Rectangle_7-11" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(54 97)"/>
+      <rect id="Rectangle_7-12" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(57 97)"/>
+      <rect id="Rectangle_7-13" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(60 97)"/>
+      <rect id="Rectangle_7-14" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(63 97)"/>
+      <rect id="Rectangle_7-15" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(66 97)"/>
+      <rect id="Rectangle_7-16" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(69 97)"/>
+      <rect id="Rectangle_7-17" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(72 97)"/>
+      <rect id="Rectangle_7-18" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(75 97)"/>
+      <rect id="Rectangle_7-19" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(78 97)"/>
+      <rect id="Rectangle_7-20" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(81 97)"/>
+      <rect id="Rectangle_7-21" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(84 97)"/>
+      <rect id="Rectangle_7-22" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(87 97)"/>
+      <rect id="Rectangle_7-23" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(30 100)"/>
+      <rect id="Rectangle_7-24" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(33 100)"/>
+      <rect id="Rectangle_7-25" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(36 100)"/>
+      <rect id="Rectangle_7-26" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(39 100)"/>
+      <rect id="Rectangle_7-27" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(42 100)"/>
+      <rect id="Rectangle_7-28" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(45 100)"/>
+      <rect id="Rectangle_7-29" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(48 100)"/>
+      <rect id="Rectangle_7-30" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(51 100)"/>
+      <rect id="Rectangle_7-31" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(54 100)"/>
+      <rect id="Rectangle_7-32" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(57 100)"/>
+      <rect id="Rectangle_7-33" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(60 100)"/>
+      <rect id="Rectangle_7-34" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(63 100)"/>
+      <rect id="Rectangle_7-35" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(66 100)"/>
+      <rect id="Rectangle_7-36" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(69 100)"/>
+      <rect id="Rectangle_7-37" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(72 100)"/>
+      <rect id="Rectangle_7-38" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(75 100)"/>
+      <rect id="Rectangle_7-39" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(78 100)"/>
+      <rect id="Rectangle_7-40" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(81 100)"/>
+      <rect id="Rectangle_7-41" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(84 100)"/>
+      <rect id="Rectangle_7-42" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(87 100)"/>
+      <rect id="Rectangle_7-43" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(30 103)"/>
+      <rect id="Rectangle_7-44" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(33 103)"/>
+      <rect id="Rectangle_7-45" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(36 103)"/>
+      <rect id="Rectangle_7-46" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(39 103)"/>
+      <rect id="Rectangle_7-47" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(42 103)"/>
+      <rect id="Rectangle_7-48" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(45 103)"/>
+      <rect id="Rectangle_7-49" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(48 103)"/>
+      <rect id="Rectangle_7-50" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(51 103)"/>
+      <rect id="Rectangle_7-51" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(54 103)"/>
+      <rect id="Rectangle_7-52" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(57 103)"/>
+      <rect id="Rectangle_7-53" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(60 103)"/>
+      <rect id="Rectangle_7-54" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(63 103)"/>
+      <rect id="Rectangle_7-55" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(66 103)"/>
+      <rect id="Rectangle_7-56" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(69 103)"/>
+      <rect id="Rectangle_7-57" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(72 103)"/>
+      <rect id="Rectangle_7-58" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(75 103)"/>
+      <rect id="Rectangle_7-59" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(78 103)"/>
+      <rect id="Rectangle_7-60" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(81 103)"/>
+      <rect id="Rectangle_7-61" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(84 103)"/>
+      <rect id="Rectangle_7-62" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(87 103)"/>
+      <rect id="Rectangle_7-63" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(30 106)"/>
+      <rect id="Rectangle_7-64" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(33 106)"/>
+      <rect id="Rectangle_7-65" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(36 106)"/>
+      <rect id="Rectangle_7-66" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(39 106)"/>
+      <rect id="Rectangle_7-67" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(42 106)"/>
+      <rect id="Rectangle_7-68" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(45 106)"/>
+      <rect id="Rectangle_7-69" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(48 106)"/>
+      <rect id="Rectangle_7-70" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(51 106)"/>
+      <rect id="Rectangle_7-71" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(54 106)"/>
+      <rect id="Rectangle_7-72" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(57 106)"/>
+      <rect id="Rectangle_7-73" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(60 106)"/>
+      <rect id="Rectangle_7-74" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(63 106)"/>
+      <rect id="Rectangle_7-75" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(66 106)"/>
+      <rect id="Rectangle_7-76" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(69 106)"/>
+      <rect id="Rectangle_7-77" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(72 106)"/>
+      <rect id="Rectangle_7-78" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(75 106)"/>
+      <rect id="Rectangle_7-79" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(78 106)"/>
+      <rect id="Rectangle_7-80" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(81 106)"/>
+      <rect id="Rectangle_7-81" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(84 106)"/>
+      <rect id="Rectangle_7-82" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(87 106)"/>
+      <rect id="Rectangle_7-83" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(30 109)"/>
+      <rect id="Rectangle_7-84" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(33 109)"/>
+      <rect id="Rectangle_7-85" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(36 109)"/>
+      <rect id="Rectangle_7-86" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(39 109)"/>
+      <rect id="Rectangle_7-87" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(42 109)"/>
+      <rect id="Rectangle_7-88" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(45 109)"/>
+      <rect id="Rectangle_7-89" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(48 109)"/>
+      <rect id="Rectangle_7-90" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(51 109)"/>
+      <rect id="Rectangle_7-91" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(54 109)"/>
+      <rect id="Rectangle_7-92" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(57 109)"/>
+      <rect id="Rectangle_7-93" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(60 109)"/>
+      <rect id="Rectangle_7-94" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(63 109)"/>
+      <rect id="Rectangle_7-95" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(66 109)"/>
+      <rect id="Rectangle_7-96" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(69 109)"/>
+      <rect id="Rectangle_7-97" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(72 109)"/>
+      <rect id="Rectangle_7-98" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(75 109)"/>
+      <path id="Path_5" data-name="Path 5" class="cls-3" d="M0,0H3V3H0Z" transform="translate(78 109)"/>
+      <rect id="Rectangle_7-99" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(81 109)"/>
+      <rect id="Rectangle_7-100" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(84 109)"/>
+      <rect id="Rectangle_7-101" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(87 109)"/>
+      <rect id="Rectangle_7-102" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(30 112)"/>
+      <rect id="Rectangle_7-103" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(33 112)"/>
+      <rect id="Rectangle_7-104" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(36 112)"/>
+      <rect id="Rectangle_7-105" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(39 112)"/>
+      <rect id="Rectangle_7-106" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(42 112)"/>
+      <rect id="Rectangle_7-107" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(45 112)"/>
+      <rect id="Rectangle_7-108" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(48 112)"/>
+      <rect id="Rectangle_7-109" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(51 112)"/>
+      <rect id="Rectangle_7-110" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(54 112)"/>
+      <rect id="Rectangle_7-111" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(57 112)"/>
+      <rect id="Rectangle_7-112" data-name="Rectangle 7" class="cls-5" width="3" height="3" transform="translate(60 112)"/>
+      <rect id="Rectangle_7-113" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(63 112)"/>
+      <rect id="Rectangle_7-114" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(66 112)"/>
+      <rect id="Rectangle_7-115" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(69 112)"/>
+      <rect id="Rectangle_7-116" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(72 112)"/>
+      <rect id="Rectangle_7-117" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(75 112)"/>
+      <rect id="Rectangle_7-118" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(78 112)"/>
+      <rect id="Rectangle_7-119" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(81 112)"/>
+      <rect id="Rectangle_7-120" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(84 112)"/>
+      <rect id="Rectangle_7-121" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(87 112)"/>
+      <rect id="Rectangle_7-122" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(30 115)"/>
+      <rect id="Rectangle_7-123" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(33 115)"/>
+      <rect id="Rectangle_7-124" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(36 115)"/>
+      <rect id="Rectangle_7-125" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(39 115)"/>
+      <rect id="Rectangle_7-126" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(42 115)"/>
+      <rect id="Rectangle_7-127" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(45 115)"/>
+      <rect id="Rectangle_7-128" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(48 115)"/>
+      <rect id="Rectangle_7-129" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(51 115)"/>
+      <rect id="Rectangle_7-130" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(54 115)"/>
+      <rect id="Rectangle_7-131" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(57 115)"/>
+      <rect id="Rectangle_7-132" data-name="Rectangle 7" class="cls-5" width="3" height="3" transform="translate(60 115)"/>
+      <rect id="Rectangle_7-133" data-name="Rectangle 7" class="cls-5" width="3" height="3" transform="translate(63 115)"/>
+      <rect id="Rectangle_7-134" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(66 115)"/>
+      <rect id="Rectangle_7-135" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(69 115)"/>
+      <rect id="Rectangle_7-136" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(72 115)"/>
+      <rect id="Rectangle_7-137" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(75 115)"/>
+      <rect id="Rectangle_7-138" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(78 115)"/>
+      <rect id="Rectangle_7-139" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(81 115)"/>
+      <rect id="Rectangle_7-140" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(84 115)"/>
+      <rect id="Rectangle_7-141" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(87 115)"/>
+      <rect id="Rectangle_7-142" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(30 118)"/>
+      <rect id="Rectangle_7-143" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(33 118)"/>
+      <rect id="Rectangle_7-144" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(36 118)"/>
+      <rect id="Rectangle_7-145" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(39 118)"/>
+      <rect id="Rectangle_7-146" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(42 118)"/>
+      <rect id="Rectangle_7-147" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(45 118)"/>
+      <rect id="Rectangle_7-148" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(48 118)"/>
+      <rect id="Rectangle_7-149" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(51 118)"/>
+      <rect id="Rectangle_7-150" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(54 118)"/>
+      <rect id="Rectangle_7-151" data-name="Rectangle 7" class="cls-5" width="3" height="3" transform="translate(57 118)"/>
+      <rect id="Rectangle_7-152" data-name="Rectangle 7" class="cls-5" width="3" height="3" transform="translate(60 118)"/>
+      <rect id="Rectangle_7-153" data-name="Rectangle 7" class="cls-5" width="3" height="3" transform="translate(63 118)"/>
+      <rect id="Rectangle_7-154" data-name="Rectangle 7" class="cls-5" width="3" height="3" transform="translate(66 118)"/>
+      <rect id="Rectangle_7-155" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(69 118)"/>
+      <rect id="Rectangle_7-156" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(72 118)"/>
+      <rect id="Rectangle_7-157" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(75 118)"/>
+      <rect id="Rectangle_7-158" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(78 118)"/>
+      <rect id="Rectangle_7-159" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(81 118)"/>
+      <rect id="Rectangle_7-160" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(84 118)"/>
+      <rect id="Rectangle_7-161" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(87 118)"/>
+      <rect id="Rectangle_7-162" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(30 121)"/>
+      <rect id="Rectangle_7-163" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(33 121)"/>
+      <rect id="Rectangle_7-164" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(36 121)"/>
+      <rect id="Rectangle_7-165" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(39 121)"/>
+      <rect id="Rectangle_7-166" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(42 121)"/>
+      <rect id="Rectangle_7-167" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(45 121)"/>
+      <rect id="Rectangle_7-168" data-name="Rectangle 7" class="cls-5" width="3" height="3" transform="translate(48 121)"/>
+      <rect id="Rectangle_7-169" data-name="Rectangle 7" class="cls-5" width="3" height="3" transform="translate(51 121)"/>
+      <rect id="Rectangle_7-170" data-name="Rectangle 7" class="cls-5" width="3" height="3" transform="translate(54 121)"/>
+      <rect id="Rectangle_7-171" data-name="Rectangle 7" class="cls-5" width="3" height="3" transform="translate(57 121)"/>
+      <rect id="Rectangle_7-172" data-name="Rectangle 7" class="cls-5" width="3" height="3" transform="translate(60 121)"/>
+      <rect id="Rectangle_7-173" data-name="Rectangle 7" class="cls-6" width="3" height="3" transform="translate(63 121)"/>
+      <rect id="Rectangle_7-174" data-name="Rectangle 7" class="cls-5" width="3" height="3" transform="translate(66 121)"/>
+      <rect id="Rectangle_7-175" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(69 121)"/>
+      <rect id="Rectangle_7-176" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(72 121)"/>
+      <rect id="Rectangle_7-177" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(75 121)"/>
+      <rect id="Rectangle_7-178" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(78 121)"/>
+      <rect id="Rectangle_7-179" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(81 121)"/>
+      <rect id="Rectangle_7-180" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(84 121)"/>
+      <rect id="Rectangle_7-181" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(87 121)"/>
+      <rect id="Rectangle_7-182" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(30 124)"/>
+      <rect id="Rectangle_7-183" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(33 124)"/>
+      <rect id="Rectangle_7-184" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(36 124)"/>
+      <rect id="Rectangle_7-185" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(39 124)"/>
+      <rect id="Rectangle_7-186" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(42 124)"/>
+      <rect id="Rectangle_7-187" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(45 124)"/>
+      <rect id="Rectangle_7-188" data-name="Rectangle 7" class="cls-5" width="3" height="3" transform="translate(48 124)"/>
+      <rect id="Rectangle_7-189" data-name="Rectangle 7" class="cls-6" width="3" height="3" transform="translate(51 124)"/>
+      <path id="Path_3" data-name="Path 3" class="cls-5" d="M0,0H3V3H0Z" transform="translate(54 124)"/>
+      <rect id="Rectangle_7-190" data-name="Rectangle 7" class="cls-6" width="3" height="3" transform="translate(57 124)"/>
+      <rect id="Rectangle_7-191" data-name="Rectangle 7" class="cls-6" width="3" height="3" transform="translate(60 124)"/>
+      <rect id="Rectangle_7-192" data-name="Rectangle 7" class="cls-6" width="3" height="3" transform="translate(63 124)"/>
+      <rect id="Rectangle_7-193" data-name="Rectangle 7" class="cls-5" width="3" height="3" transform="translate(66 124)"/>
+      <rect id="Rectangle_7-194" data-name="Rectangle 7" class="cls-5" width="3" height="3" transform="translate(69 124)"/>
+      <rect id="Rectangle_7-195" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(72 124)"/>
+      <rect id="Rectangle_7-196" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(75 124)"/>
+      <rect id="Rectangle_7-197" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(78 124)"/>
+      <rect id="Rectangle_7-198" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(81 124)"/>
+      <rect id="Rectangle_7-199" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(84 124)"/>
+      <rect id="Rectangle_7-200" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(87 124)"/>
+      <rect id="Rectangle_7-201" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(30 127)"/>
+      <rect id="Rectangle_7-202" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(33 127)"/>
+      <rect id="Rectangle_7-203" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(36 127)"/>
+      <rect id="Rectangle_7-204" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(39 127)"/>
+      <rect id="Rectangle_7-205" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(42 127)"/>
+      <rect id="Rectangle_7-206" data-name="Rectangle 7" class="cls-5" width="3" height="3" transform="translate(45 127)"/>
+      <rect id="Rectangle_7-207" data-name="Rectangle 7" class="cls-5" width="3" height="3" transform="translate(48 127)"/>
+      <rect id="Rectangle_7-208" data-name="Rectangle 7" class="cls-6" width="3" height="3" transform="translate(51 127)"/>
+      <rect id="Rectangle_7-209" data-name="Rectangle 7" class="cls-6" width="3" height="3" transform="translate(54 127)"/>
+      <rect id="Rectangle_7-210" data-name="Rectangle 7" class="cls-6" width="3" height="3" transform="translate(57 127)"/>
+      <rect id="Rectangle_7-211" data-name="Rectangle 7" class="cls-6" width="3" height="3" transform="translate(60 127)"/>
+      <rect id="Rectangle_7-212" data-name="Rectangle 7" class="cls-7" width="3" height="3" transform="translate(63 127)"/>
+      <rect id="Rectangle_7-213" data-name="Rectangle 7" class="cls-6" width="3" height="3" transform="translate(66 127)"/>
+      <rect id="Rectangle_7-214" data-name="Rectangle 7" class="cls-5" width="3" height="3" transform="translate(69 127)"/>
+      <rect id="Rectangle_7-215" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(72 127)"/>
+      <rect id="Rectangle_7-216" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(75 127)"/>
+      <rect id="Rectangle_7-217" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(78 127)"/>
+      <rect id="Rectangle_7-218" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(81 127)"/>
+      <rect id="Rectangle_7-219" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(84 127)"/>
+      <rect id="Rectangle_7-220" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(87 127)"/>
+      <rect id="Rectangle_7-221" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(30 130)"/>
+      <rect id="Rectangle_7-222" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(33 130)"/>
+      <rect id="Rectangle_7-223" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(36 130)"/>
+      <rect id="Rectangle_7-224" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(39 130)"/>
+      <rect id="Rectangle_7-225" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(42 130)"/>
+      <rect id="Rectangle_7-226" data-name="Rectangle 7" class="cls-5" width="3" height="3" transform="translate(45 130)"/>
+      <rect id="Rectangle_7-227" data-name="Rectangle 7" class="cls-5" width="3" height="3" transform="translate(48 130)"/>
+      <rect id="Rectangle_7-228" data-name="Rectangle 7" class="cls-7" width="3" height="3" transform="translate(51 130)"/>
+      <rect id="Rectangle_7-229" data-name="Rectangle 7" class="cls-6" width="3" height="3" transform="translate(54 130)"/>
+      <rect id="Rectangle_7-230" data-name="Rectangle 7" class="cls-7" width="3" height="3" transform="translate(57 130)"/>
+      <rect id="Rectangle_7-231" data-name="Rectangle 7" class="cls-7" width="3" height="3" transform="translate(60 130)"/>
+      <rect id="Rectangle_7-232" data-name="Rectangle 7" class="cls-6" width="3" height="3" transform="translate(63 130)"/>
+      <rect id="Rectangle_7-233" data-name="Rectangle 7" class="cls-6" width="3" height="3" transform="translate(66 130)"/>
+      <rect id="Rectangle_7-234" data-name="Rectangle 7" class="cls-5" width="3" height="3" transform="translate(69 130)"/>
+      <rect id="Rectangle_7-235" data-name="Rectangle 7" class="cls-5" width="3" height="3" transform="translate(72 130)"/>
+      <rect id="Rectangle_7-236" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(75 130)"/>
+      <rect id="Rectangle_7-237" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(78 130)"/>
+      <rect id="Rectangle_7-238" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(81 130)"/>
+      <rect id="Rectangle_7-239" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(84 130)"/>
+      <rect id="Rectangle_7-240" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(87 130)"/>
+      <rect id="Rectangle_7-241" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(30 133)"/>
+      <rect id="Rectangle_7-242" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(33 133)"/>
+      <rect id="Rectangle_7-243" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(36 133)"/>
+      <rect id="Rectangle_7-244" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(39 133)"/>
+      <rect id="Rectangle_7-245" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(42 133)"/>
+      <rect id="Rectangle_7-246" data-name="Rectangle 7" class="cls-5" width="3" height="3" transform="translate(45 133)"/>
+      <rect id="Rectangle_7-247" data-name="Rectangle 7" class="cls-5" width="3" height="3" transform="translate(48 133)"/>
+      <rect id="Rectangle_7-248" data-name="Rectangle 7" class="cls-6" width="3" height="3" transform="translate(51 133)"/>
+      <rect id="Rectangle_7-249" data-name="Rectangle 7" class="cls-7" width="3" height="3" transform="translate(54 133)"/>
+      <rect id="Rectangle_7-250" data-name="Rectangle 7" class="cls-7" width="3" height="3" transform="translate(57 133)"/>
+      <rect id="Rectangle_7-251" data-name="Rectangle 7" class="cls-7" width="3" height="3" transform="translate(60 133)"/>
+      <rect id="Rectangle_7-252" data-name="Rectangle 7" class="cls-7" width="3" height="3" transform="translate(63 133)"/>
+      <rect id="Rectangle_7-253" data-name="Rectangle 7" class="cls-6" width="3" height="3" transform="translate(66 133)"/>
+      <rect id="Rectangle_7-254" data-name="Rectangle 7" class="cls-6" width="3" height="3" transform="translate(69 133)"/>
+      <rect id="Rectangle_7-255" data-name="Rectangle 7" class="cls-5" width="3" height="3" transform="translate(72 133)"/>
+      <rect id="Rectangle_7-256" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(75 133)"/>
+      <rect id="Rectangle_7-257" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(78 133)"/>
+      <rect id="Rectangle_7-258" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(81 133)"/>
+      <rect id="Rectangle_7-259" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(84 133)"/>
+      <rect id="Rectangle_7-260" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(87 133)"/>
+      <rect id="Rectangle_7-261" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(30 136)"/>
+      <rect id="Rectangle_7-262" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(33 136)"/>
+      <rect id="Rectangle_7-263" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(36 136)"/>
+      <rect id="Rectangle_7-264" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(39 136)"/>
+      <rect id="Rectangle_7-265" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(42 136)"/>
+      <rect id="Rectangle_7-266" data-name="Rectangle 7" class="cls-5" width="3" height="3" transform="translate(45 136)"/>
+      <rect id="Rectangle_7-267" data-name="Rectangle 7" class="cls-6" width="3" height="3" transform="translate(48 136)"/>
+      <rect id="Rectangle_7-268" data-name="Rectangle 7" class="cls-6" width="3" height="3" transform="translate(51 136)"/>
+      <rect id="Rectangle_7-269" data-name="Rectangle 7" class="cls-7" width="3" height="3" transform="translate(54 136)"/>
+      <rect id="Rectangle_7-270" data-name="Rectangle 7" class="cls-7" width="3" height="3" transform="translate(57 136)"/>
+      <rect id="Rectangle_7-271" data-name="Rectangle 7" class="cls-7" width="3" height="3" transform="translate(60 136)"/>
+      <rect id="Rectangle_7-272" data-name="Rectangle 7" class="cls-7" width="3" height="3" transform="translate(63 136)"/>
+      <rect id="Rectangle_7-273" data-name="Rectangle 7" class="cls-7" width="3" height="3" transform="translate(66 136)"/>
+      <rect id="Rectangle_7-274" data-name="Rectangle 7" class="cls-6" width="3" height="3" transform="translate(69 136)"/>
+      <rect id="Rectangle_7-275" data-name="Rectangle 7" class="cls-5" width="3" height="3" transform="translate(72 136)"/>
+      <rect id="Rectangle_7-276" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(75 136)"/>
+      <rect id="Rectangle_7-277" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(78 136)"/>
+      <rect id="Rectangle_7-278" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(81 136)"/>
+      <rect id="Rectangle_7-279" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(84 136)"/>
+      <rect id="Rectangle_7-280" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(87 136)"/>
+      <rect id="Rectangle_7-281" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(30 139)"/>
+      <rect id="Rectangle_7-282" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(33 139)"/>
+      <rect id="Rectangle_7-283" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(36 139)"/>
+      <rect id="Rectangle_7-284" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(39 139)"/>
+      <rect id="Rectangle_7-285" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(42 139)"/>
+      <rect id="Rectangle_7-286" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(45 139)"/>
+      <rect id="Rectangle_7-287" data-name="Rectangle 7" class="cls-6" width="3" height="3" transform="translate(48 139)"/>
+      <rect id="Rectangle_7-288" data-name="Rectangle 7" class="cls-7" width="3" height="3" transform="translate(51 139)"/>
+      <rect id="Rectangle_7-289" data-name="Rectangle 7" class="cls-7" width="3" height="3" transform="translate(54 139)"/>
+      <rect id="Rectangle_7-290" data-name="Rectangle 7" class="cls-7" width="3" height="3" transform="translate(57 139)"/>
+      <rect id="Rectangle_7-291" data-name="Rectangle 7" class="cls-7" width="3" height="3" transform="translate(60 139)"/>
+      <rect id="Rectangle_7-292" data-name="Rectangle 7" class="cls-7" width="3" height="3" transform="translate(63 139)"/>
+      <rect id="Rectangle_7-293" data-name="Rectangle 7" class="cls-7" width="3" height="3" transform="translate(66 139)"/>
+      <path id="Path_4" data-name="Path 4" class="cls-6" d="M0,0H3V3H0Z" transform="translate(69 139)"/>
+      <rect id="Rectangle_7-294" data-name="Rectangle 7" class="cls-5" width="3" height="3" transform="translate(72 139)"/>
+      <rect id="Rectangle_7-295" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(75 139)"/>
+      <rect id="Rectangle_7-296" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(78 139)"/>
+      <rect id="Rectangle_7-297" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(81 139)"/>
+      <rect id="Rectangle_7-298" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(84 139)"/>
+      <rect id="Rectangle_7-299" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(87 139)"/>
+      <rect id="Rectangle_7-300" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(30 142)"/>
+      <rect id="Rectangle_7-301" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(33 142)"/>
+      <rect id="Rectangle_7-302" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(36 142)"/>
+      <rect id="Rectangle_7-303" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(39 142)"/>
+      <rect id="Rectangle_7-304" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(42 142)"/>
+      <rect id="Rectangle_7-305" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(45 142)"/>
+      <rect id="Rectangle_7-306" data-name="Rectangle 7" class="cls-6" width="3" height="3" transform="translate(48 142)"/>
+      <rect id="Rectangle_7-307" data-name="Rectangle 7" class="cls-7" width="3" height="3" transform="translate(51 142)"/>
+      <rect id="Rectangle_7-308" data-name="Rectangle 7" class="cls-7" width="3" height="3" transform="translate(54 142)"/>
+      <rect id="Rectangle_7-309" data-name="Rectangle 7" class="cls-7" width="3" height="3" transform="translate(57 142)"/>
+      <rect id="Rectangle_7-310" data-name="Rectangle 7" class="cls-7" width="3" height="3" transform="translate(60 142)"/>
+      <g class="cls-9" transform="matrix(1, 0, 0, 1, 30, 97)">
+        <rect id="Rectangle_7-311" data-name="Rectangle 7" class="cls-7" width="3" height="3" transform="translate(33 45)"/>
+      </g>
+      <rect id="Rectangle_7-312" data-name="Rectangle 7" class="cls-6" width="3" height="3" transform="translate(66 142)"/>
+      <rect id="Rectangle_7-313" data-name="Rectangle 7" class="cls-5" width="3" height="3" transform="translate(69 142)"/>
+      <rect id="Rectangle_7-314" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(72 142)"/>
+      <rect id="Rectangle_7-315" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(75 142)"/>
+      <rect id="Rectangle_7-316" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(78 142)"/>
+      <rect id="Rectangle_7-317" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(81 142)"/>
+      <rect id="Rectangle_7-318" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(84 142)"/>
+      <rect id="Rectangle_7-319" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(87 142)"/>
+      <rect id="Rectangle_7-320" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(30 145)"/>
+      <rect id="Rectangle_7-321" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(33 145)"/>
+      <rect id="Rectangle_7-322" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(36 145)"/>
+      <rect id="Rectangle_7-323" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(39 145)"/>
+      <rect id="Rectangle_7-324" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(42 145)"/>
+      <rect id="Rectangle_7-325" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(45 145)"/>
+      <rect id="Rectangle_7-326" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(48 145)"/>
+      <rect id="Rectangle_7-327" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(51 145)"/>
+      <rect id="Rectangle_7-328" data-name="Rectangle 7" class="cls-7" width="3" height="3" transform="translate(54 145)"/>
+      <rect id="Rectangle_7-329" data-name="Rectangle 7" class="cls-7" width="3" height="3" transform="translate(57 145)"/>
+      <rect id="Rectangle_7-330" data-name="Rectangle 7" class="cls-7" width="3" height="3" transform="translate(60 145)"/>
+      <g class="cls-8" transform="matrix(1, 0, 0, 1, 30, 97)">
+        <rect id="Rectangle_7-331" data-name="Rectangle 7" class="cls-7" width="3" height="3" transform="translate(33 48)"/>
+      </g>
+      <rect id="Rectangle_7-332" data-name="Rectangle 7" class="cls-6" width="3" height="3" transform="translate(66 145)"/>
+      <rect id="Rectangle_7-333" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(69 145)"/>
+      <rect id="Rectangle_7-334" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(72 145)"/>
+      <rect id="Rectangle_7-335" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(75 145)"/>
+      <rect id="Rectangle_7-336" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(78 145)"/>
+      <rect id="Rectangle_7-337" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(81 145)"/>
+      <rect id="Rectangle_7-338" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(84 145)"/>
+      <rect id="Rectangle_7-339" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(87 145)"/>
+      <rect id="Rectangle_7-340" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(30 148)"/>
+      <rect id="Rectangle_7-341" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(33 148)"/>
+      <rect id="Rectangle_7-342" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(36 148)"/>
+      <rect id="Rectangle_7-343" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(39 148)"/>
+      <rect id="Rectangle_7-344" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(42 148)"/>
+      <rect id="Rectangle_7-345" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(45 148)"/>
+      <rect id="Rectangle_7-346" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(48 148)"/>
+      <rect id="Rectangle_7-347" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(51 148)"/>
+      <rect id="Rectangle_7-348" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(54 148)"/>
+      <rect id="Rectangle_7-349" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(57 148)"/>
+      <rect id="Rectangle_7-350" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(60 148)"/>
+      <rect id="Rectangle_7-351" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(63 148)"/>
+      <rect id="Rectangle_7-352" data-name="Rectangle 7" class="cls-4" width="3" height="3" transform="translate(66 148)"/>
+      <rect id="Rectangle_7-353" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(69 148)"/>
+      <rect id="Rectangle_7-354" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(72 148)"/>
+      <rect id="Rectangle_7-355" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(75 148)"/>
+      <rect id="Rectangle_7-356" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(78 148)"/>
+      <rect id="Rectangle_7-357" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(81 148)"/>
+      <rect id="Rectangle_7-358" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(84 148)"/>
+      <rect id="Rectangle_7-359" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(87 148)"/>
+      <rect id="Rectangle_7-360" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(30 151)"/>
+      <rect id="Rectangle_7-361" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(33 151)"/>
+      <rect id="Rectangle_7-362" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(36 151)"/>
+      <rect id="Rectangle_7-363" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(39 151)"/>
+      <rect id="Rectangle_7-364" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(42 151)"/>
+      <rect id="Rectangle_7-365" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(45 151)"/>
+      <rect id="Rectangle_7-366" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(48 151)"/>
+      <rect id="Rectangle_7-367" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(51 151)"/>
+      <rect id="Rectangle_7-368" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(54 151)"/>
+      <rect id="Rectangle_7-369" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(57 151)"/>
+      <rect id="Rectangle_7-370" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(60 151)"/>
+      <rect id="Rectangle_7-371" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(63 151)"/>
+      <rect id="Rectangle_7-372" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(66 151)"/>
+      <rect id="Rectangle_7-373" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(69 151)"/>
+      <rect id="Rectangle_7-374" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(72 151)"/>
+      <rect id="Rectangle_7-375" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(75 151)"/>
+      <rect id="Rectangle_7-376" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(78 151)"/>
+      <rect id="Rectangle_7-377" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(81 151)"/>
+      <rect id="Rectangle_7-378" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(84 151)"/>
+      <rect id="Rectangle_7-379" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(87 151)"/>
+      <rect id="Rectangle_7-380" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(30 154)"/>
+      <rect id="Rectangle_7-381" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(33 154)"/>
+      <rect id="Rectangle_7-382" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(36 154)"/>
+      <rect id="Rectangle_7-383" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(39 154)"/>
+      <rect id="Rectangle_7-384" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(42 154)"/>
+      <rect id="Rectangle_7-385" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(45 154)"/>
+      <rect id="Rectangle_7-386" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(48 154)"/>
+      <rect id="Rectangle_7-387" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(51 154)"/>
+      <rect id="Rectangle_7-388" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(54 154)"/>
+      <rect id="Rectangle_7-389" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(57 154)"/>
+      <rect id="Rectangle_7-390" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(60 154)"/>
+      <rect id="Rectangle_7-391" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(63 154)"/>
+      <rect id="Rectangle_7-392" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(66 154)"/>
+      <rect id="Rectangle_7-393" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(69 154)"/>
+      <rect id="Rectangle_7-394" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(72 154)"/>
+      <rect id="Rectangle_7-395" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(75 154)"/>
+      <rect id="Rectangle_7-396" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(78 154)"/>
+      <rect id="Rectangle_7-397" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(81 154)"/>
+      <rect id="Rectangle_7-398" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(84 154)"/>
+      <rect id="Rectangle_7-399" data-name="Rectangle 7" class="cls-3" width="3" height="3" transform="translate(87 154)"/>
+    </g>
+  </g>
+</svg>
