@@ -7,6 +7,7 @@
     justify-content: center;
     background: url(./images/tictactoe.svg);
     background-size: cover;
+    color: black;
 }
 
 .game__wrapper--inner {
