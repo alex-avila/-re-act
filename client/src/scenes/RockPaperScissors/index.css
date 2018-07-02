@@ -1,8 +1,50 @@
 .gameContainer {
-    height: 800px;
-    width: 33%;
-    background-color: cadetblue;
+    height: 80%;
+    width: 66%;
+
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+        url(http://68.media.tumblr.com/d3d8cd6fa70e8486406c0ce64fb3583a/tumblr_ohrg4riwAo1vetbaeo1_500.gif);
+    background-size: cover;
+    background-position: center;
     margin:  auto;
-    color: blueviolet;
+    margin-top: 5em;
+    color: whitesmoke;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
 }
+
+.timer {
+    height: 100px;
+    width: 100px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(41, 9, 59, 0.58);
+    border: solid rgb(193, 177, 201) 1px;
+    text-align: center;
+    font-size: 400%
+}
+
+.results-card {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+
+.p1-card {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.p2-card {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
 

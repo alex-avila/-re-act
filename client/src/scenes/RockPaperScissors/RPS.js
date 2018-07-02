@@ -60,12 +60,23 @@ export default class RPS extends Component {
     }
   };
 
+  cardBackgroundSwitch = () => {
+
+  }
+
   render() {
+    let playerOneClass
+    let playerTwoClass
+    if (this.state.playerOne === 'Fire') {
+      playerOneClass = 'red'
+    } else if (this.state.playerOne === 'Water') {
+      playerOneClass = 'blue'
+    }
     return (
       <div>
         <div>
           <div className="timer">{this.state.time}</div>
-          <button onClick={() => this.handlePlayerCompare("Fire")}>Fire</button>
+          <button  onClick={() => this.handlePlayerCompare("Fire")}>Fire</button>
           <button onClick={() => this.handlePlayerCompare("Water")}>
             Water
           </button>
@@ -78,10 +89,10 @@ export default class RPS extends Component {
         </button>
         {
           this.state.time === 0 &&
-            <div style={{display: 'flex', flexDirection: 'column'}}>
-              <span>{this.state.results}</span>
-              <span>Player One: {this.state.playerOne}</span>
-              <span>Player Two: {this.state.playerTwo}</span>
+            <div style={ this.state.condition ? {display: 'flex', flexDirection: 'column'} : null}>
+              <div>{this.state.results}</div>
+              <div className='p1-card'>Player One: {this.state.playerOne}</div>
+              <div className='p2-card'>Player Two: {this.state.playerTwo}</div>
             </div>
         }
       </div>
