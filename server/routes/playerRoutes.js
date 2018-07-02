@@ -1,11 +1,7 @@
 const express = require('express');
 const playerRoutes = express.Router()
-<<<<<<< HEAD
-const Player = require('../models/playerSchema')
-=======
 const Player = require('../models/playerSchema');
 const jwt = require("jsonwebtoken");
->>>>>>> master
 
 playerRoutes.route('/')
     .get((req, res) => {
@@ -13,19 +9,6 @@ playerRoutes.route('/')
     })
     .post((req, res) => {
 
-<<<<<<< HEAD
-    })
-
-playerRoutes.route('/:id')
-    .get((req, res) => {
-
-    })
-    .put((req, res) => {
-
-    })
-    .delete((req, res) => {
-
-=======
 playerRoutes.post("/signup", (req, res) => {
     playerSchema.findOne({ userName: req.body.userName }, (err, existingPlayer) => {
         if (err) return res.status(500).send({ success: false, err });
@@ -64,7 +47,6 @@ playerRoutes.route('/:playerId')
             if (err) return res.status(500).send(err)
             return res.status(200).send(foundPlayer)
         })
->>>>>>> master
     })
 
 module.exports = playerRoutes
