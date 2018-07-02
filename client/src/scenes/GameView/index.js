@@ -5,7 +5,13 @@ import { connect } from 'react-redux'
 import './index.css'
 
 class GameView extends Component {
+    componentDidMount() {
+        // Get high score data from server
+        // this.props.getHighScores(this.props.match.params.id)
+    }
+
     render() {
+        console.log(this.props)
         const game = this.props.games.find(game => game.url === this.props.match.params.id)
         return (
             <div className="game-view utility-wrapper">
