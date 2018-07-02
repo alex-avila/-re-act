@@ -56,13 +56,8 @@ class App extends Component {
 					{/* Games */}
 					<Route path="/TicTacToe/play" component={TicTacToe} />
 					<Route path="/cardMatch/play" component={MemoryGame} />
-<<<<<<< HEAD
-					{/* <Route path='/ColorGuess' Component={ColorGuess} /> */}
 					<Route path='/RPS/play'  component={RPSLanding} />
-=======
-					<Route path='/ColorGuess' component={ColorGuess} />
-					{/* <Route path='=RPS'  Component={RPS} */}
->>>>>>> master
+					<Route path='/ColorGuess/play' component={ColorGuess} />
 				</Switch>
 
 			</div>
