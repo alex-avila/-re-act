@@ -24,7 +24,7 @@ class Navbar extends Component {
                     </Link>
                     {
                         // if user is logged in 
-                        true ?
+                        false ?
                             <div>
                                 <Link to="/user">
                                     <span>User</span>
