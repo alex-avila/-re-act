@@ -22,14 +22,23 @@ class Navbar extends Component {
                         <span style={logoStyle} className="logo__icon"></span>
                         <span className="logo__text">H0i</span>
                     </Link>
-                    <div className="navbar__auth">
-                        <Link to="/login">
-                            <Button basic>Login</Button>
-                        </Link>
-                        <Link to="/signup">
-                            <Button>Sign Up</Button>
-                        </Link>
-                    </div>
+                    {
+                        // if user is logged in 
+                        true ?
+                            <div>
+                                <Link to="/user">
+                                    <span>User</span>
+                                </Link>
+                            </div> :
+                            <div className="navbar__auth">
+                                <Link to="/login">
+                                    <Button basic>Login</Button>
+                                </Link>
+                                <Link to="/signup">
+                                    <Button>Sign Up</Button>
+                                </Link>
+                            </div>
+                    }
                 </div>
             </div>
         )

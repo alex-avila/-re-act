@@ -15,6 +15,7 @@ import Navbar from './components/Navbar';
 
 import Login from './scenes/Login'
 import SignUp from './scenes/SignUp'
+import User from './scenes/User'
 
 
 class App extends Component {
@@ -45,6 +46,7 @@ class App extends Component {
 					{/* This needs to be above the GameView component route */}
 					<Route path="/login" component={Login} />
 					<Route path="/signup" component={SignUp} />
+					<Route path="/user" component={User} />
 
 					{/* All games share this as the details page */}
 					<Route exact path="/:id" render={(props) => <GameView {...props} />} />
