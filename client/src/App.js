@@ -8,6 +8,7 @@ import Home from './scenes/Home'
 
 import MemoryGame from './scenes/MemoryGame'
 import TicTacToe from './scenes/TicTacToe/Game'
+import ColorGuess from "./scenes/ColorGuess"
 
 import BackButton from './components/BackButton'
 import GameView from './scenes/GameView'
@@ -54,7 +55,7 @@ class App extends Component {
 					{/* Games */}
 					<Route path="/TicTacToe/play" component={TicTacToe} />
 					<Route path="/cardMatch/play" component={MemoryGame} />
-					{/* <Route path='/ColorGuess' Component={ColorGuess} /> */}
+					<Route path='/ColorGuess' component={ColorGuess} />
 					{/* <Route path='=RPS'  Component={RPS} */}
 				</Switch>
 
