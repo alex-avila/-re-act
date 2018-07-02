@@ -19,9 +19,6 @@
     margin-left: 0.618em;
 }
 
-.navbar__auth {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.618em;
-    align-items: center;
+.navbar__auth a:first-child {
+    margin-right: 1em;
 }
