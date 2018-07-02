@@ -1,4 +1,4 @@
-const express = require('express')
+const express = require('express');
 const playerRoutes = express.Router()
 const Player = require('../models/playerSchema');
 const jwt = require("jsonwebtoken");
@@ -7,6 +7,7 @@ playerRoutes.route('/')
     .get((req, res) => {
 
     })
+    .post((req, res) => {
 
 playerRoutes.post("/signup", (req, res) => {
     playerSchema.findOne({ userName: req.body.userName }, (err, existingPlayer) => {

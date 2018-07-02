@@ -13,6 +13,7 @@ import ColorGuess from "./scenes/ColorGuess"
 import BackButton from './components/BackButton'
 import GameView from './scenes/GameView'
 import Navbar from './components/Navbar';
+import RPSLanding from './scenes/RockPaperScissors/RPSLanding';
 
 import Login from './scenes/Login'
 import SignUp from './scenes/SignUp'
@@ -55,8 +56,8 @@ class App extends Component {
 					{/* Games */}
 					<Route path="/TicTacToe/play" component={TicTacToe} />
 					<Route path="/cardMatch/play" component={MemoryGame} />
-					<Route path='/ColorGuess' component={ColorGuess} />
-					{/* <Route path='=RPS'  Component={RPS} */}
+					<Route path='/RPS/play'  component={RPSLanding} />
+					<Route path='/ColorGuess/play' component={ColorGuess} />
 				</Switch>
 
 			</div>
