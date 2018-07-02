@@ -10,6 +10,7 @@ import TicTacToe from './scenes/TicTacToe/Game'
 import BackButton from './components/BackButton'
 import GameView from './scenes/GameView'
 import Navbar from './components/Navbar';
+import RPSLanding from './scenes/RockPaperScissors/RPSLanding';
 
 
 class App extends Component {
@@ -43,7 +44,7 @@ class App extends Component {
 					<Route path="/TicTacToe/play" component={TicTacToe} />
 					<Route path="/cardMatch/play" component={MemoryGame} />
 					{/* <Route path='/ColorGuess' Component={ColorGuess} /> */}
-					{/* <Route path='=RPS'  Component={RPS} */}
+					<Route path='/RPS/play'  component={RPSLanding} />
 				</Switch>
 
 			</div>

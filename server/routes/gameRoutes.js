@@ -1,8 +1,8 @@
 const express = require('express');
-const playerRoutes = express.Router()
-const Player = require('../models/playerSchema')
+const gameRoutes = express.Router()
+const Game = require('../models/gameSchema')
 
-playerRoutes.route('/')
+gameRoutes.route('/')
     .get((req, res) => {
 
     })
@@ -10,7 +10,7 @@ playerRoutes.route('/')
 
     })
 
-playerRoutes.route('/:id')
+gameRoutes.route('/:id')
     .get((req, res) => {
 
     })
@@ -21,4 +21,4 @@ playerRoutes.route('/:id')
 
     })
 
-    module.exports = playerRoutes
+module.exports = gameRoutes
