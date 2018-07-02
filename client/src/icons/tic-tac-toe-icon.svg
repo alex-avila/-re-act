@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #fff;
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#91c4ff"/>
+      <stop offset="1" stop-color="#c09fff"/>
+    </linearGradient>
+  </defs>
+  <g id="Tic_Tac_Toe_Icon" data-name="Tic Tac Toe Icon" transform="translate(-26 -97)">
+    <rect id="Rectangle_1" data-name="Rectangle 1" class="cls-1" width="60" height="60" transform="translate(26 97)"/>
+    <line id="Line_1" data-name="Line 1" class="cls-2" y1="42" transform="translate(50.5 106.5)"/>
+    <line id="Line_4" data-name="Line 4" class="cls-2" y1="42" transform="translate(77.5 121.5) rotate(90)"/>
+    <line id="Line_2" data-name="Line 2" class="cls-2" y1="42" transform="translate(62.5 106.5)"/>
+    <line id="Line_3" data-name="Line 3" class="cls-2" y1="42" transform="translate(77.5 133.5) rotate(90)"/>
+    <g id="Ellipse_1" data-name="Ellipse 1" class="cls-2" transform="translate(37 108)">
+      <circle class="cls-3" cx="4.5" cy="4.5" r="4.5"/>
+      <circle class="cls-4" cx="4.5" cy="4.5" r="3.5"/>
+    </g>
+  </g>
+</svg>

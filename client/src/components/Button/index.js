@@ -7,24 +7,25 @@ const BaseButton = styled.button`
     outline: none;
     font-size: inherit;
     cursor: pointer;
-    transition: all 0.5s;
+    transition: all 0.25s;
 `
 
 const BasicButton = BaseButton.extend`
-    color: #aa9fff;
+    color: #FDACFD;
     &:hover {
-        filter: contrast(0.5);
+        color: #F4D7FF;
     }
 `
 
 const GhostButton = BaseButton.extend`
-    border: 1px solid #aa9fff;
-    color: #aa9fff;
-    padding: 0.4em 0.8em;
-    border-radius: 7px;
+    background: #2E204A;
+    border: 1px solid #FDACFD;
+    color: #FDACFD;
+    padding: 0.414em 0.828em;
+    box-shadow: 0 3px 6px #362555;
     &:hover {
-        background: #aa9fff;
-        color: white;
+        background: #FDACFD;
+        color: #2E204A;
     }
 `
 
