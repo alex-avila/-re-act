@@ -1,0 +1,39 @@
+.login__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1em;
+    max-width: 500px;
+    margin: auto;
+}
+
+.login__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login__form__inputs {
+    padding: 0 0 1em;
+}
+
+.login__form label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1em 0 2em;
+    font-size: 14px;
+}
+
+.login__form input {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 0.618em;
+    margin: 0.618em 0 0;
+    color: inherit;
+    border: 1px solid white;
+}
+
+.login__form button {
+    margin: auto;
+}
