@@ -3,7 +3,7 @@ import ReactCountdownClock from "react-countdown-clock";
 
 const Countdown = props => {
     return(
-        <div id="countdown">
+        <div id="countdown" style={{backgroundColor: '#36424E'}}>
             <ReactCountdownClock seconds={30}
                 color="white"
                 alpha={6.0}

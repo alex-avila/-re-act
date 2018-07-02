@@ -1,8 +1,12 @@
-/* * {
+/* html {
     background-color: #36424E;
     color: white;
     font-family: Montserrat;
 } */
+
+#countdown div canvas {
+    background: #36424E;
+}
 
 #colorGuess {
     background-color: #36424E;

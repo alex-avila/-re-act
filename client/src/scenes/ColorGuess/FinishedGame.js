@@ -7,7 +7,7 @@ class FinishedGame extends Component {
 
     render(){
         return(
-            <div>
+            <div style={{backgroundColor: '#36424E'}}>
                 {this.props.finished ? <div id="popUpWindow">
                     <div id="finishedWindow">
                         <h2>You got {this.props.score} correct!</h2>
