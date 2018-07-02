@@ -20,9 +20,16 @@ class Navbar extends Component {
                 <div className="navbar utility-wrapper">
                     <Link to="/" className="navbar__logo">
                         <span style={logoStyle} className="logo__icon"></span>
-                        <span className="logo__text">H01</span>
+                        <span className="logo__text">H0i</span>
                     </Link>
-                    <Button basic>Login</Button>
+                    <div className="navbar__auth">
+                        <Link to="/login">
+                            <Button basic>Login</Button>
+                        </Link>
+                        <Link to="/signup">
+                            <Button>Sign Up</Button>
+                        </Link>
+                    </div>
                 </div>
             </div>
         )

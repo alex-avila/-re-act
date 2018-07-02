@@ -5,11 +5,16 @@ import { connect } from 'react-redux'
 import { getGames } from './redux/reducers/gamesReducer'
 
 import Home from './scenes/Home'
+
 import MemoryGame from './scenes/MemoryGame'
 import TicTacToe from './scenes/TicTacToe/Game'
+
 import BackButton from './components/BackButton'
 import GameView from './scenes/GameView'
 import Navbar from './components/Navbar';
+
+import Login from './scenes/Login'
+import SignUp from './scenes/SignUp'
 
 
 class App extends Component {
@@ -35,6 +40,11 @@ class App extends Component {
 				<Switch>
 					{/* Home */}
 					<Route exact path="/" render={(props) => <Home games={games} {...props} />} />
+
+					{/* Auth */}
+					{/* This needs to be above the GameView component route */}
+					<Route path="/login" component={Login} />
+					<Route path="/signup" component={SignUp} />
 
 					{/* All games share this as the details page */}
 					<Route exact path="/:id" render={(props) => <GameView {...props} />} />
