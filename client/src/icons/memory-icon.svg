@@ -1,0 +1,306 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #484848;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+
+      .cls-5 {
+        fill: none;
+      }
+
+      .cls-6 {
+        filter: url(#Rectangle_6-16);
+      }
+
+      .cls-7 {
+        filter: url(#Rectangle_6-15);
+      }
+
+      .cls-8 {
+        filter: url(#Rectangle_6-14);
+      }
+
+      .cls-9 {
+        filter: url(#Rectangle_6-13);
+      }
+
+      .cls-10 {
+        filter: url(#Rectangle_6-12);
+      }
+
+      .cls-11 {
+        filter: url(#Rectangle_6-11);
+      }
+
+      .cls-12 {
+        filter: url(#Rectangle_6-10);
+      }
+
+      .cls-13 {
+        filter: url(#Rectangle_6-9);
+      }
+
+      .cls-14 {
+        filter: url(#Rectangle_6-8);
+      }
+
+      .cls-15 {
+        filter: url(#Rectangle_6-7);
+      }
+
+      .cls-16 {
+        filter: url(#Rectangle_6-6);
+      }
+
+      .cls-17 {
+        filter: url(#Rectangle_6-5);
+      }
+
+      .cls-18 {
+        filter: url(#Rectangle_6-4);
+      }
+
+      .cls-19 {
+        filter: url(#Rectangle_6-3);
+      }
+
+      .cls-20 {
+        filter: url(#Rectangle_6-2);
+      }
+
+      .cls-21 {
+        filter: url(#Rectangle_6);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#a3fbff"/>
+      <stop offset="1" stop-color="#bcc9ff"/>
+    </linearGradient>
+    <filter id="Rectangle_6" x="4.5" y="5.5" width="13" height="13" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_6-2" x="17.5" y="5.5" width="13" height="13" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_6-3" x="30.5" y="5.5" width="13" height="13" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_6-4" x="43.5" y="5.5" width="13" height="13" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur-4"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_6-5" x="4.5" y="18.5" width="13" height="13" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur-5"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_6-6" x="17.5" y="18.5" width="13" height="13" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur-6"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-6"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_6-7" x="30.5" y="18.5" width="13" height="13" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur-7"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-7"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_6-8" x="43.5" y="18.5" width="13" height="13" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur-8"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-8"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_6-9" x="4.5" y="31.5" width="13" height="13" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur-9"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-9"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_6-10" x="17.5" y="31.5" width="13" height="13" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur-10"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-10"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_6-11" x="30.5" y="31.5" width="13" height="13" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur-11"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-11"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_6-12" x="43.5" y="31.5" width="13" height="13" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur-12"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-12"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_6-13" x="4.5" y="44.5" width="13" height="13" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur-13"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-13"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_6-14" x="17.5" y="44.5" width="13" height="13" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur-14"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-14"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_6-15" x="30.5" y="44.5" width="13" height="13" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur-15"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-15"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_6-16" x="43.5" y="44.5" width="13" height="13" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur-16"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-16"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Memory_Game_Icon" data-name="Memory Game Icon" transform="translate(-26 -97)">
+    <rect id="Rectangle_1" data-name="Rectangle 1" class="cls-1" width="60" height="60" transform="translate(26 97)"/>
+    <g id="Cards" transform="translate(-4)">
+      <g class="cls-21" transform="matrix(1, 0, 0, 1, 30, 97)">
+        <g id="Rectangle_6-17" data-name="Rectangle 6" class="cls-2" transform="translate(6 6)">
+          <rect class="cls-4" width="10" height="10" rx="1"/>
+          <rect class="cls-5" x="0.5" y="0.5" width="9" height="9" rx="0.5"/>
+        </g>
+      </g>
+      <g class="cls-20" transform="matrix(1, 0, 0, 1, 30, 97)">
+        <g id="Rectangle_6-18" data-name="Rectangle 6" class="cls-2" transform="translate(19 6)">
+          <rect class="cls-4" width="10" height="10" rx="1"/>
+          <rect class="cls-5" x="0.5" y="0.5" width="9" height="9" rx="0.5"/>
+        </g>
+      </g>
+      <g class="cls-19" transform="matrix(1, 0, 0, 1, 30, 97)">
+        <g id="Rectangle_6-19" data-name="Rectangle 6" class="cls-2" transform="translate(32 6)">
+          <rect class="cls-4" width="10" height="10" rx="1"/>
+          <rect class="cls-5" x="0.5" y="0.5" width="9" height="9" rx="0.5"/>
+        </g>
+      </g>
+      <g class="cls-18" transform="matrix(1, 0, 0, 1, 30, 97)">
+        <g id="Rectangle_6-20" data-name="Rectangle 6" class="cls-3" transform="translate(45 6)">
+          <rect class="cls-4" width="10" height="10" rx="1"/>
+          <rect class="cls-5" x="0.5" y="0.5" width="9" height="9" rx="0.5"/>
+        </g>
+      </g>
+      <g class="cls-17" transform="matrix(1, 0, 0, 1, 30, 97)">
+        <g id="Rectangle_6-21" data-name="Rectangle 6" class="cls-2" transform="translate(6 19)">
+          <rect class="cls-4" width="10" height="10" rx="1"/>
+          <rect class="cls-5" x="0.5" y="0.5" width="9" height="9" rx="0.5"/>
+        </g>
+      </g>
+      <g class="cls-16" transform="matrix(1, 0, 0, 1, 30, 97)">
+        <g id="Rectangle_6-22" data-name="Rectangle 6" class="cls-3" transform="translate(19 19)">
+          <rect class="cls-4" width="10" height="10" rx="1"/>
+          <rect class="cls-5" x="0.5" y="0.5" width="9" height="9" rx="0.5"/>
+        </g>
+      </g>
+      <g class="cls-15" transform="matrix(1, 0, 0, 1, 30, 97)">
+        <g id="Rectangle_6-23" data-name="Rectangle 6" class="cls-2" transform="translate(32 19)">
+          <rect class="cls-4" width="10" height="10" rx="1"/>
+          <rect class="cls-5" x="0.5" y="0.5" width="9" height="9" rx="0.5"/>
+        </g>
+      </g>
+      <g class="cls-14" transform="matrix(1, 0, 0, 1, 30, 97)">
+        <g id="Rectangle_6-24" data-name="Rectangle 6" class="cls-2" transform="translate(45 19)">
+          <rect class="cls-4" width="10" height="10" rx="1"/>
+          <rect class="cls-5" x="0.5" y="0.5" width="9" height="9" rx="0.5"/>
+        </g>
+      </g>
+      <g class="cls-13" transform="matrix(1, 0, 0, 1, 30, 97)">
+        <g id="Rectangle_6-25" data-name="Rectangle 6" class="cls-2" transform="translate(6 32)">
+          <rect class="cls-4" width="10" height="10" rx="1"/>
+          <rect class="cls-5" x="0.5" y="0.5" width="9" height="9" rx="0.5"/>
+        </g>
+      </g>
+      <g class="cls-12" transform="matrix(1, 0, 0, 1, 30, 97)">
+        <g id="Rectangle_6-26" data-name="Rectangle 6" class="cls-2" transform="translate(19 32)">
+          <rect class="cls-4" width="10" height="10" rx="1"/>
+          <rect class="cls-5" x="0.5" y="0.5" width="9" height="9" rx="0.5"/>
+        </g>
+      </g>
+      <g class="cls-11" transform="matrix(1, 0, 0, 1, 30, 97)">
+        <g id="Rectangle_6-27" data-name="Rectangle 6" class="cls-2" transform="translate(32 32)">
+          <rect class="cls-4" width="10" height="10" rx="1"/>
+          <rect class="cls-5" x="0.5" y="0.5" width="9" height="9" rx="0.5"/>
+        </g>
+      </g>
+      <g class="cls-10" transform="matrix(1, 0, 0, 1, 30, 97)">
+        <g id="Rectangle_6-28" data-name="Rectangle 6" class="cls-2" transform="translate(45 32)">
+          <rect class="cls-4" width="10" height="10" rx="1"/>
+          <rect class="cls-5" x="0.5" y="0.5" width="9" height="9" rx="0.5"/>
+        </g>
+      </g>
+      <g class="cls-9" transform="matrix(1, 0, 0, 1, 30, 97)">
+        <g id="Rectangle_6-29" data-name="Rectangle 6" class="cls-3" transform="translate(6 45)">
+          <rect class="cls-4" width="10" height="10" rx="1"/>
+          <rect class="cls-5" x="0.5" y="0.5" width="9" height="9" rx="0.5"/>
+        </g>
+      </g>
+      <g class="cls-8" transform="matrix(1, 0, 0, 1, 30, 97)">
+        <g id="Rectangle_6-30" data-name="Rectangle 6" class="cls-2" transform="translate(19 45)">
+          <rect class="cls-4" width="10" height="10" rx="1"/>
+          <rect class="cls-5" x="0.5" y="0.5" width="9" height="9" rx="0.5"/>
+        </g>
+      </g>
+      <g class="cls-7" transform="matrix(1, 0, 0, 1, 30, 97)">
+        <g id="Rectangle_6-31" data-name="Rectangle 6" class="cls-2" transform="translate(32 45)">
+          <rect class="cls-4" width="10" height="10" rx="1"/>
+          <rect class="cls-5" x="0.5" y="0.5" width="9" height="9" rx="0.5"/>
+        </g>
+      </g>
+      <g class="cls-6" transform="matrix(1, 0, 0, 1, 30, 97)">
+        <g id="Rectangle_6-32" data-name="Rectangle 6" class="cls-2" transform="translate(45 45)">
+          <rect class="cls-4" width="10" height="10" rx="1"/>
+          <rect class="cls-5" x="0.5" y="0.5" width="9" height="9" rx="0.5"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

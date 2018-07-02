@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #74b9ff;
+      }
+
+      .cls-4 {
+        fill: #55efc4;
+      }
+
+      .cls-5 {
+        fill: #a29bfe;
+      }
+
+      .cls-6 {
+        fill: #81ecec;
+      }
+
+      .cls-7 {
+        fill: #00b894;
+      }
+
+      .cls-8 {
+        fill: #00cec9;
+      }
+
+      .cls-9 {
+        fill: #0984e3;
+      }
+
+      .cls-10 {
+        fill: #6c5ce7;
+      }
+
+      .cls-11 {
+        fill: #ffeaa7;
+      }
+
+      .cls-12 {
+        fill: #fab1a0;
+      }
+
+      .cls-13 {
+        fill: #ff7675;
+      }
+
+      .cls-14 {
+        fill: #fd79a8;
+      }
+
+      .cls-15 {
+        fill: #fdcb6e;
+      }
+
+      .cls-16 {
+        fill: #e17055;
+      }
+
+      .cls-17 {
+        fill: #d63031;
+      }
+
+      .cls-18 {
+        fill: #e84393;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#91c4ff"/>
+      <stop offset="1" stop-color="#c09fff"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1" data-name="Rectangle 1" class="cls-1" width="60" height="60" transform="translate(26 97)"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_1" data-name="Mask Group 1" class="cls-2" transform="translate(-26 -97)">
+    <g id="Colors_Grid" data-name="Colors Grid" transform="translate(-4)">
+      <rect id="Rectangle_3" data-name="Rectangle 3" class="cls-3" width="15" height="15" transform="translate(60 97)"/>
+      <rect id="Rectangle_4" data-name="Rectangle 4" class="cls-4" width="15" height="15" transform="translate(30 97)"/>
+      <rect id="Rectangle_3-2" data-name="Rectangle 3" class="cls-5" width="15" height="15" transform="translate(75 97)"/>
+      <rect id="Rectangle_5" data-name="Rectangle 5" class="cls-6" width="15" height="15" transform="translate(45 97)"/>
+      <rect id="Rectangle_3-3" data-name="Rectangle 3" class="cls-7" width="15" height="15" transform="translate(30 112)"/>
+      <rect id="Rectangle_3-4" data-name="Rectangle 3" class="cls-8" width="15" height="15" transform="translate(45 112)"/>
+      <rect id="Rectangle_3-5" data-name="Rectangle 3" class="cls-9" width="15" height="15" transform="translate(60 112)"/>
+      <rect id="Rectangle_3-6" data-name="Rectangle 3" class="cls-10" width="15" height="15" transform="translate(75 112)"/>
+      <rect id="Rectangle_3-7" data-name="Rectangle 3" class="cls-11" width="15" height="15" transform="translate(30 127)"/>
+      <rect id="Rectangle_3-8" data-name="Rectangle 3" class="cls-12" width="15" height="15" transform="translate(45 127)"/>
+      <rect id="Rectangle_3-9" data-name="Rectangle 3" class="cls-13" width="15" height="15" transform="translate(60 127)"/>
+      <rect id="Rectangle_3-10" data-name="Rectangle 3" class="cls-14" width="15" height="15" transform="translate(75 127)"/>
+      <rect id="Rectangle_3-11" data-name="Rectangle 3" class="cls-15" width="15" height="15" transform="translate(30 142)"/>
+      <rect id="Rectangle_3-12" data-name="Rectangle 3" class="cls-16" width="15" height="15" transform="translate(45 142)"/>
+      <rect id="Rectangle_3-13" data-name="Rectangle 3" class="cls-17" width="15" height="15" transform="translate(60 142)"/>
+      <rect id="Rectangle_3-14" data-name="Rectangle 3" class="cls-18" width="15" height="15" transform="translate(75 142)"/>
+    </g>
+  </g>
+</svg>

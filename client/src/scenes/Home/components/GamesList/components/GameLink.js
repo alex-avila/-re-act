@@ -2,29 +2,34 @@ import React, { Component } from 'react'
 
 import { Link } from 'react-router-dom'
 
-import Button from '../../../../../../components/Button'
+import Button from '../../../../../components/Button'
 
-import ticTacToeIcon from '../../../../icons/tictactoe.svg'
-
-import './index.css'
+import './GameLink.css'
 
 class GameLink extends Component {
     render() {
-        const iconStyle = {
-            background: `url(${ticTacToeIcon})`,
+        const { name, url, icon } = this.props
+        let iconStyle = {
+            background: `url(${icon})`,
             backgroundSize: 'contain',
             backgroundRepeat: 'no-repeat',
             height: 60,
             width: 60,
             display: 'inline-block',
-            borderRadius: 10
+            boxShadow: '0 3px 6px #362555',
+            borderRadius: 4
         }
-        const { name, url } = this.props
+        if (url === 'cardMatch') {
+            iconStyle = { ...iconStyle, border: '1px solid #484848' }
+        }
         return (
             <div className="games__item">
                 <Link to={url} className="item__info">
                     <span style={iconStyle}></span>
-                    <span className="item__info__title">{name}</span>
+                    <div className="item__info__text">
+                        <span className="item__info__title">{name}</span>
+                        {/* <span className="item__info__addtl-info">sample text</span> */}
+                    </div>
                 </Link>
                 <Link to={`${url}/play`}>
                     <Button>Play</Button>
