@@ -20,7 +20,7 @@ export default class RPS extends Component {
   handleTimer = () => {
     console.log(this.state.time);
     let timer = setInterval(() => {
-      if(this.state.time === 0) {
+      if (this.state.time === 0) {
         clearInterval(timer)
       } else {
         this.myTimer()
@@ -38,7 +38,7 @@ export default class RPS extends Component {
     } else if (rng12 === 3) {
       this.setState({ playerTwo: "Earth" });
     }
-    
+
     // }, 3000);
   };
 
@@ -65,18 +65,17 @@ export default class RPS extends Component {
   }
 
   render() {
-    let playerOneClass
-    let playerTwoClass
-    if (this.state.playerOne === 'Fire') {
-      playerOneClass = 'red'
-    } else if (this.state.playerOne === 'Water') {
-      playerOneClass = 'blue'
+    const { playerOne, playerTwo } = this.state
+
+    const getChoiceClass = (player) => {
+      return player === 'Fire' ? 'red' : player === 'Water' ? 'blue' : 'green'
     }
+
     return (
       <div>
         <div>
           <div className="timer">{this.state.time}</div>
-          <button  onClick={() => this.handlePlayerCompare("Fire")}>Fire</button>
+          <button onClick={() => this.handlePlayerCompare("Fire")}>Fire</button>
           <button onClick={() => this.handlePlayerCompare("Water")}>
             Water
           </button>
@@ -84,16 +83,21 @@ export default class RPS extends Component {
             Earth
           </button>
         </div>
-        <button onClick={() => {this.handleGameFunction(), this.handleTimer()}}>
+        <button onClick={
+          () => {
+            this.handleGameFunction()
+            this.handleTimer()
+          }
+        }>
           Start
         </button>
         {
           this.state.time === 0 &&
-            <div style={ this.state.condition ? {display: 'flex', flexDirection: 'column'} : null}>
-              <div>{this.state.results}</div>
-              <div className='p1-card'>Player One: {this.state.playerOne}</div>
-              <div className='p2-card'>Player Two: {this.state.playerTwo}</div>
-            </div>
+          <div style={this.state.condition ? { display: 'flex', flexDirection: 'column' } : null}>
+            <div>{this.state.results}</div>
+            <div className={getChoiceClass(playerOne)}>Player One: {playerOne}</div>
+            <div className={getChoiceClass(playerTwo)}>Player Two: {playerTwo}</div>
+          </div>
         }
       </div>
     );
