@@ -9,23 +9,24 @@ playerRoutes.route('/')
     })
     .post((req, res) => {
 
-playerRoutes.post("/signup", (req, res) => {
-    playerSchema.findOne({ userName: req.body.userName }, (err, existingPlayer) => {
-        if (err) return res.status(500).send({ success: false, err });
+        playerRoutes.post("/signup", (req, res) => {
+            playerSchema.findOne({ userName: req.body.userName }, (err, existingPlayer) => {
+                if (err) return res.status(500).send({ success: false, err });
 
-        if (existingPlayer !== null) {
-            return res.status(400).send({ success: false, err: "Username is already taken!" });
-        }
+                if (existingPlayer !== null) {
+                    return res.status(400).send({ success: false, err: "Username is already taken!" });
+                }
 
-        const newPlayer = new playerSchema(req.body);
-        newPlayer.save((err, player) => {
-            if (err) return res.status(500).send({ success: false, err });
+                const newPlayer = new playerSchema(req.body);
+                newPlayer.save((err, player) => {
+                    if (err) return res.status(500).send({ success: false, err });
 
-            const token = jwt.sign(player.toObject(), process.env.SECRET);
-            return res.status(201).send({ success: true, player: player.toObject(), token });
+                    const token = jwt.sign(player.toObject(), process.env.SECRET);
+                    return res.status(201).send({ success: true, player: player.toObject(), token });
+                })
+            })
         })
     })
-})
 
 playerRoutes.post("/login", (req, res) => {
     playerSchema.findOne({ userName: req.body.userName.toLowerCase() }, (err, player) => {
