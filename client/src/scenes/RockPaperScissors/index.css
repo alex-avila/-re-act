@@ -35,16 +35,23 @@
     background-color: green;
 }
 
-.p1-card {
+.red {
     width: 100px;
     height: 100px;
     background-color: red;
 }
 
-.p2-card {
+.blue {
     width: 100px;
     height: 100px;
     background-color: blue;
 }
+
+.green {
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+}
+
 
 

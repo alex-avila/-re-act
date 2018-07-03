@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import index from './index.css'
+import './index.css';
 
 import RPS from './RPS'
 
