@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 
+import index from './index.css'
+
+import Hero from './charComponents/Hero';
+
 export default class RPS extends Component {
   constructor(props) {
     super(props);
@@ -29,7 +33,6 @@ export default class RPS extends Component {
   };
 
   handleGameFunction = () => {
-    // setTimeout(() => {
     const rng12 = Math.floor(Math.random() * 3 + 1);
     if (rng12 === 1) {
       this.setState({ playerTwo: "Fire" });
@@ -38,8 +41,12 @@ export default class RPS extends Component {
     } else if (rng12 === 3) {
       this.setState({ playerTwo: "Earth" });
     }
-    
-    // }, 3000);
+
+    this.setState(prevState => {
+      return{
+        istoggled: !prevState.istoggled
+      }
+    })
   };
 
   handlePlayerCompare = x => {
@@ -60,33 +67,20 @@ export default class RPS extends Component {
     }
   };
 
-  cardBackgroundSwitch = () => {
 
-  }
 
-  render() {
-    let playerOneClass
-    let playerTwoClass
-    if (this.state.playerOne === 'Fire') {
-      playerOneClass = 'red'
-    } else if (this.state.playerOne === 'Water') {
-      playerOneClass = 'blue'
-    }
+  render() {    
     return (
       <div>
+        {this.state.istoggled ?
         <div>
-          <div className="timer">{this.state.time}</div>
-          <button  onClick={() => this.handlePlayerCompare("Fire")}>Fire</button>
-          <button onClick={() => this.handlePlayerCompare("Water")}>
-            Water
-          </button>
-          <button onClick={() => this.handlePlayerCompare("Earth")}>
-            Earth
-          </button>
-        </div>
-        <button onClick={() => {this.handleGameFunction(), this.handleTimer()}}>
-          Start
-        </button>
+            <div className="timer">{this.state.time}</div>
+            <button onClick={() => this.handlePlayerCompare("Fire")}>Fire</button>
+            <button onClick={() => this.handlePlayerCompare("Water")}>Water</button>
+            <button onClick={() => this.handlePlayerCompare("Earth")}>Earth</button>
+          </div>
+          : null}
+        <button onClick={() => {this.handleGameFunction(), this.handleTimer()}}>Start</button>
         {
           this.state.time === 0 &&
             <div style={ this.state.condition ? {display: 'flex', flexDirection: 'column'} : null}>

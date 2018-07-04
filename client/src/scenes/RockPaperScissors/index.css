@@ -1,7 +1,7 @@
 .gameContainer {
-    height: 80%;
+    height: 90%;
     width: 66%;
-
+    font-family: 'Share Tech Mono', monospace;
     background: 
         linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
         url(http://68.media.tumblr.com/d3d8cd6fa70e8486406c0ce64fb3583a/tumblr_ohrg4riwAo1vetbaeo1_500.gif);
@@ -12,9 +12,9 @@
     color: whitesmoke;
     padding: 1em;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     border-radius: 20px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
 }
@@ -38,13 +38,38 @@
 .p1-card {
     width: 100px;
     height: 100px;
-    background-color: red;
+    /* background-color: red; */
 }
 
 .p2-card {
     width: 100px;
     height: 100px;
-    background-color: blue;
+    /* background-color: blue; */
 }
 
+.inContainer {
+    display: flex;
+    flex-direction: column;
+}
 
+.knight {
+    height: 400px;
+    width: 300px;
+    background: url('./assets/demon-idle.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.dragon {
+    height: 400px;
+    width: 300px;
+    background: url('./assets/pkight.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+button {
+    height: 50px;
+    color: crimson;
+    background-color: darkgray;
+}
