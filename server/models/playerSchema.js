@@ -33,7 +33,6 @@ const playerSchema = new mongoose.Schema({
 
 // Add avatar image from gravatar
 playerSchema.pre('save', function() {
-    console.log(md5(this.email))
     this.gravatar = `https://www.gravatar.com/avatar/${md5(this.email)}?d=identicon`
 })
 
