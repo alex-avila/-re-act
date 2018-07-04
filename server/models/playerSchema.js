@@ -36,4 +36,10 @@ playerSchema.pre('save', function() {
     this.gravatar = `https://www.gravatar.com/avatar/${md5(this.email)}?d=identicon`
 })
 
+playerSchema.methods.withoutPassword = function () {  
+    const player = this.toObject()
+    delete player.password
+    return player
+}
+
 module.exports = mongoose.model('Player', playerSchema)
