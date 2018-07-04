@@ -2,9 +2,9 @@
     height: 90%;
     width: 66%;
     font-family: 'Share Tech Mono', monospace;
-    background: 
-        linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-        url(http://68.media.tumblr.com/d3d8cd6fa70e8486406c0ce64fb3583a/tumblr_ohrg4riwAo1vetbaeo1_500.gif);
+    background:
+    linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url(http://68.media.tumblr.com/d3d8cd6fa70e8486406c0ce64fb3583a/tumblr_ohrg4riwAo1vetbaeo1_500.gif);
     background-size: cover;
     background-position: center;
     margin:  auto;

@@ -70,10 +70,19 @@ export default class RPS extends Component {
 
 
   render() {    
+  cardBackgroundSwitch = () => {
+
+  }
+
+  render() {
+    const { playerOne, playerTwo } = this.state
+
+    const getChoiceClass = (player) => {
+      return player === 'Fire' ? 'red' : player === 'Water' ? 'blue' : 'green'
+    }
+
     return (
-      <div>
         {this.state.istoggled ?
-        <div>
             <div className="timer">{this.state.time}</div>
             <button onClick={() => this.handlePlayerCompare("Fire")}>Fire</button>
             <button onClick={() => this.handlePlayerCompare("Water")}>Water</button>
