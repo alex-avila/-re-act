@@ -54,6 +54,12 @@ class RPS extends Component {
 
 	handlePlayerCompare = x => {
 		const { url } = this.props
+		const updateScores = (url, score) => {
+			if (!localStorage.player) {
+				return
+			}
+			this.props.updateScores(url, score)
+		}
 		this.setState({ playerOne: x })
 		if (
 			(x === "Fire" && this.state.playerTwo === "Earth") ||
@@ -61,17 +67,17 @@ class RPS extends Component {
 			(x === "Water" && this.state.playerTwo === "Fire")
 		) {
 			// go to redux and backend and update scores
-			this.props.updateScores(url, 1000)
+			updateScores(url, 1000)
 			console.log("Player One wins! ^.^");
 			this.setState({ results: "Player one wins! ^.^" });
 		} else if (x === this.state.playerTwo) {
 			// go to redux and backend and update scores
-			this.props.updateScores(url, 250)
+			updateScores(url, 250)
 			console.log(`It's a draw`);
 			this.setState({ results: `It's a draw. -.-` });
 		} else {
 			// go to redux and backend and update scores
-			this.props.updateScores(url, 500)
+			updateScores(url, 500)
 			console.log("Player Two Wins! ^.^");
 			this.setState({ results: "Player two wins! ^.^" });
 		}

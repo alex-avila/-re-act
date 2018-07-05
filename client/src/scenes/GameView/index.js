@@ -18,10 +18,10 @@ class GameView extends Component {
         })
         return (
             <div className="game-view utility-wrapper">
-                {/* {
+                {
                     game && 
-                    <h1>{game.name}</h1>
-                } */}
+                    <h2>{game.name}</h2>
+                }
                 <div>
                     {/* Image */}
                 </div>

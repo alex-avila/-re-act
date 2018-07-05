@@ -110,7 +110,7 @@ class RGBGuesser extends Component {
             return <Squares key={i} squaresResult={chooseSquare} colors={color} />
         })
 
-        if (this.state.isFinished) {
+        if (this.state.isFinished && localStorage.player) {
             const url = this.props.match.path.split('/')[1]
             const score = this.state.chosenCorrect * 100
             this.props.updateScores(url, score)
@@ -123,7 +123,7 @@ class RGBGuesser extends Component {
 
                 <h1 className="centerText">RGB Color Guesser</h1>
                 <h3 className="centerText">{correctColor}</h3>
-                <h3 ref="result" className="centerText"></h3>
+                <h3 ref="result" className="centerText">{null}</h3>
                 <h3 className="centerText">Number Correct: <span>{this.state.chosenCorrect}</span></h3>
 
                 {/* rendering the six colored squares */}

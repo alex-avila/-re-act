@@ -43,9 +43,11 @@ class MemoryGame extends Component {
 
     win = () => {
         // Go to redux to update scores
-        const url = this.props.match.path.split('/')[1]
-        const score = Math.ceil(this.state.stars * 10000 / this.state.timer.getUTCSeconds())
-        this.props.updateScores(url, score)
+        if (localStorage.player) {
+            const url = this.props.match.path.split('/')[1]
+            const score = Math.ceil(this.state.stars * 10000 / this.state.timer.getUTCSeconds())
+            this.props.updateScores(url, score)
+        }
 
         clearInterval(this.state.interval)
         const time = this.state.timer
@@ -59,12 +61,12 @@ class MemoryGame extends Component {
             <React.Fragment>
                 {
                     time.getUTCMinutes() ?
-                    <React.Fragment>
-                        <span>{time.getUTCMinutes()}</span>
-                        <span className="time-unit">m</span>
+                        <React.Fragment>
+                            <span>{time.getUTCMinutes()}</span>
+                            <span className="time-unit">m</span>
+                            <span>{defaultText}</span>
+                        </React.Fragment> :
                         <span>{defaultText}</span>
-                    </React.Fragment> :
-                    <span>{defaultText}</span>
                 }
             </React.Fragment>
         )
