@@ -54,10 +54,10 @@ class App extends Component {
 					<Route exact path="/:id" render={(props) => <GameView {...props} />} />
 
 					{/* Games */}
-					<Route path="/TicTacToe/play" component={TicTacToe} />
-					<Route path="/cardMatch/play" component={MemoryGame} />
+					<Route path="/tic-tac-toe/play" component={TicTacToe} />
+					<Route path="/card-match/play" component={MemoryGame} />
 					<Route path='/RPS/play'  component={RPSLanding} />
-					<Route path='/ColorGuess/play' component={ColorGuess} />
+					<Route path='/color-guess/play' component={ColorGuess} />
 				</Switch>
 
 			</div>

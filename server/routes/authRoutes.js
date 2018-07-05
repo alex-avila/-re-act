@@ -4,6 +4,7 @@ const authRoutes = express.Router()
 const jwt = require("jsonwebtoken")
 
 authRoutes.post("/signup", (req, res) => {
+    console.log(req.body)
     Player.findOne({ userName: req.body.userName }, (err, existingPlayer) => {
         if (err) return res.status(500).send({ success: false, err });
 

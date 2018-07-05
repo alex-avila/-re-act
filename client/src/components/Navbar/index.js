@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 
+import { connect } from 'react-redux'
+import { logout } from '../../redux/reducers/theAuthorator'
+
 import { Link } from 'react-router-dom'
 import Button from '../../components/Button'
 
@@ -8,7 +11,11 @@ import logoMaybe from '../../icons/logo-maybe.svg'
 import './index.css'
 
 class Navbar extends Component {
+    handleLogout = () => {
+        this.props.logout()
+    }
     render() {
+        const { isAuthenticated } = this.props.auth
         const logoStyle = {
             background: `url(${logoMaybe})`,
             backgroundSize: 'contain',
@@ -24,11 +31,12 @@ class Navbar extends Component {
                     </Link>
                     {
                         // if user is logged in 
-                        false ?
+                        isAuthenticated ?
                             <div>
                                 <Link to="/user">
                                     <span>User</span>
                                 </Link>
+                                <Button onClick={this.handleLogout}>Logout</Button>
                             </div> :
                             <div className="navbar__auth">
                                 <Link to="/login">
@@ -45,4 +53,4 @@ class Navbar extends Component {
     }
 }
 
-export default Navbar
+export default connect(state => ({auth: state.auth}), { logout })(Navbar)
