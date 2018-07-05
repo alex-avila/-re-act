@@ -3,7 +3,7 @@ const md5 = require('md5')
 const bcrypt = require('bcrypt')
 
 const playerSchema = new mongoose.Schema({
-    userName: {
+    username: {
         type: String,
         required: true,
         lowercase: true,
@@ -32,19 +32,14 @@ const playerSchema = new mongoose.Schema({
     }
 })
 
-playerSchema.pre("save", function (next) {  
-    var user = this;
-    if (!user.isModified("password")) return next();
-    bcrypt.hash(user.password, 10, (err, hash) => {
+playerSchema.pre('save', function (next) {
+    const player = this;
+    if (!player.isModified("password")) return next();
+    bcrypt.hash(player.password, 10, (err, hash) => {
         if (err) return next(err);
-        user.password = hash;
+        player.password = hash;
         next();
     });
-});
-
-// Add avatar image from gravatar
-playerSchema.pre('save', function() {
-    this.gravatar = `https://www.gravatar.com/avatar/${md5(this.email)}?d=retro`
 })
 
 playerSchema.methods.checkPassword = function(passwordAttempt, callback) {  
@@ -53,6 +48,11 @@ playerSchema.methods.checkPassword = function(passwordAttempt, callback) {
         callback(null, isMatch);
     });
 };
+
+// Add avatar image from gravatar
+playerSchema.pre('save', function () {
+    this.gravatar = `https://www.gravatar.com/avatar/${md5(this.email)}?d=retro`
+})
 
 playerSchema.methods.withoutPassword = function () {  
     const player = this.toObject();

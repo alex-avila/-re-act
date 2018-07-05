@@ -1,9 +1,9 @@
 import { createStore, applyMiddleware, combineReducers } from 'redux'
 import thunk from 'redux-thunk'
 import games from './reducers/gamesReducer'
-import auth from './reducers/theAuthorator'
+import player from './reducers/theAuthorator'
 
-const rootReducer = combineReducers({ games, auth })
+const rootReducer = combineReducers({ games, player })
 //now do magic react
 
 const store = createStore(rootReducer, applyMiddleware(thunk))

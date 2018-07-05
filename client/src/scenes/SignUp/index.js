@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { connect } from 'react-redux' 
+
+import { connect } from 'react-redux'
 import { signup } from '../../redux/reducers/theAuthorator'
 
 import Button from '../../components/Button'
@@ -11,7 +12,7 @@ class SignUp extends Component {
         super(props)
         this.state = {
             inputs: {
-                userName: '',
+                username: '',
                 email: '',
                 password: ''
             }
@@ -39,32 +40,32 @@ class SignUp extends Component {
                 <h2>Sign Up</h2>
                 <form onSubmit={this.handleSubmit} className="signup__form">
                     <div className="signup__form__inputs">
-                        <label name="userName" >
+                        <label name="username" >
                             <span>Username</span>
-                            <input 
-                                type="text" 
-                                name="userName" 
-                                onChange={this.handleChange} 
-                                value={this.state.inputs.userName}
+                            <input
+                                type="text"
+                                name="username"
+                                onChange={this.handleChange}
+                                value={this.state.inputs.username}
                                 autoComplete="off"
                             />
                         </label>
                         <label name="email" >
                             <span>Email</span>
-                            <input 
-                                type="text" 
-                                name="email" 
-                                onChange={this.handleChange} 
+                            <input
+                                type="text"
+                                name="email"
+                                onChange={this.handleChange}
                                 value={this.state.inputs.email}
                                 autoComplete="off"
                             />
                         </label>
                         <label name="password" >
                             <span>Password</span>
-                            <input 
-                                type="text" 
-                                name="password" 
-                                onChange={this.handleChange} 
+                            <input
+                                type="text"
+                                name="password"
+                                onChange={this.handleChange}
                                 value={this.state.inputs.password}
                                 autoComplete="off"
                             />
@@ -77,4 +78,4 @@ class SignUp extends Component {
     }
 }
 
-export default connect(null, {signup}) (SignUp)
+export default connect(null, { signup })(SignUp)

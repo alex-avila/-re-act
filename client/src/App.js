@@ -68,4 +68,4 @@ class App extends Component {
 	}
 }
 
-export default withRouter(connect(state => ({ games: state.games }), { getGames, verify, updateScores })(App))
+export default withRouter(connect(state => ({ games: state.games.games }), { getGames, verify, updateScores })(App))

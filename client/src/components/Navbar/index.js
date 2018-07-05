@@ -14,8 +14,9 @@ class Navbar extends Component {
     handleLogout = () => {
         this.props.logout()
     }
+
     render() {
-        const { isAuthenticated, gravatar } = this.props.auth
+        const { isAuthenticated, gravatar } = this.props.player
         const logoStyle = {
             background: `url(${logoMaybe})`,
             backgroundSize: 'contain',
@@ -53,4 +54,4 @@ class Navbar extends Component {
     }
 }
 
-export default connect(state => ({auth: state.auth}), { logout })(Navbar)
+export default connect(state => ({player: state.player}), { logout })(Navbar)

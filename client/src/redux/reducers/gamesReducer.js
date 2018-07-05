@@ -25,8 +25,27 @@ const games = [
         name: 'Rock Paper Scissors',
         url: 'RPS',
         icon: rpsIcon
-    },
+    }
 ]
+
+let gameAxios = axios.create();
+
+gameAxios.interceptors.request.use((config) => {
+    const token = localStorage.getItem("token");
+    if (token) {
+        config.headers.Authorization = `Bearer ${token}`;
+    }
+    return config;
+}, err => {
+    Promise.reject(err)
+})
+
+const gameUrl = '/api/games/'
+
+const initialState = {
+    games,
+    scores: []
+}
 
 export const getGames = () => {
     return {
@@ -35,20 +54,47 @@ export const getGames = () => {
     }
 }
 
-export const updateScores = url => {
+const setScores = scores => {
+    return {
+        type: 'SET_SCORES',
+        scores
+    }
+}
+
+export const loadScores = url => {
     return dispatch => {
-        axios.put('/api/games/' + url, { highScores: { user: '5b3d8eee801e5eac9cca15a1', score: 3434 } }).then(response => {
-            console.log(response.data)
+        gameAxios.get(gameUrl + url).then(response => {
+            dispatch(setScores(response.data.highScores))
         }).catch(err => {
-            console.log(err)
+            console.error(err)
         })
     }
 }
 
-const gamesReducer = (state = [], action) => {
+export const updateScores = (url, score) => {
+    return dispatch => {
+        gameAxios.put(gameUrl + url, { highScores: { player: '5b3e04f945ec7bd044fd6b76', score: 8090 } })
+            .then(response => {
+                dispatch(loadScores(url));
+            })
+            .catch(err => {
+                console.error(err);
+            })
+    }
+}
+
+const gamesReducer = (state = initialState, action) => {
     switch (action.type) {
         case 'GET_GAMES':
-            return [...state, ...games]
+            return {
+                ...state,
+                games: [...action.games]
+            }
+        case 'SET_SCORES':
+            return {
+                ...state,
+                scores: [...action.scores]
+            }
         default:
             return state
     }
