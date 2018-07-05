@@ -3,6 +3,7 @@ import { Switch, Route, Link, withRouter } from "react-router-dom"
 
 import { connect } from 'react-redux'
 import { getGames } from './redux/reducers/gamesReducer'
+import { verify} from './redux/reducers/theAuthorator'
 
 import Home from './scenes/Home'
 
@@ -23,6 +24,7 @@ import User from './scenes/User'
 class App extends Component {
 	componentDidMount() {
 		this.props.getGames()
+		this.props.verify()
 	}
 
 	render() {
@@ -65,4 +67,4 @@ class App extends Component {
 	}
 }
 
-export default withRouter(connect(state => ({ games: state.games }), { getGames })(App))
+export default withRouter(connect(state => ({ games: state.games }), { getGames, verify })(App))

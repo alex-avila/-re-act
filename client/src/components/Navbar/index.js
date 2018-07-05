@@ -15,7 +15,7 @@ class Navbar extends Component {
         this.props.logout()
     }
     render() {
-        const { isAuthenticated } = this.props.auth
+        const { isAuthenticated, gravatar } = this.props.auth
         const logoStyle = {
             background: `url(${logoMaybe})`,
             backgroundSize: 'contain',
@@ -34,7 +34,7 @@ class Navbar extends Component {
                         isAuthenticated ?
                             <div>
                                 <Link to="/user">
-                                    <span>User</span>
+                                    <img width="25px" height="25px" src={`${gravatar}`}/>
                                 </Link>
                                 <Button onClick={this.handleLogout}>Logout</Button>
                             </div> :

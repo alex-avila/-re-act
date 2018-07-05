@@ -23,7 +23,7 @@ const initalState = {
         case 'AUTHENTICATE':
             return {
                 ...state,
-                ...action.user,
+                ...action.player,
                 isAuthenticated: true,
                 authErrCode: initalState.authErrCode,
                 loading: false
@@ -47,20 +47,21 @@ const initalState = {
      }
  }
 
-const authenticate = user => {
+const authenticate = player => {
+    console.log(player)
     return {
         type: 'AUTHENTICATE',
-        user
+        player
     }
 }
 
-const verify = () => {
+export const verify = () => {
     return dispatch => {
         profileAxios.get('/api/players').then(Response => {
-            const {user} = Response.data
-            dispatch(authenticate(user))
+            const {user : player} = Response.data
+            dispatch(authenticate(player))
         }).catch(err => {
-            dispatch(authErr('verify', err.Response.status))
+            dispatch(authErr('verify', err.Response))
         })
     }
 }
@@ -73,14 +74,14 @@ const authErr = (key, errCode) => {
     }
 }
 
-export const signup = userInfo => {
+export const signup = playerInfo => {
     return dispatch => {
-        axios.post('/auth/signup', userInfo).then(Response => {
+        axios.post('/auth/signup', playerInfo).then(Response => {
             console.log(Response.data)
-            const {token, user} = Response.data
+            const {token, player} = Response.data
             localStorage.token = token
-            localStorage.user = JSON.stringify(user)
-            dispatch(authenticate(user))
+            localStorage.player = JSON.stringify(player)
+            dispatch(authenticate(player))
         }).catch(err => {
             dispatch(authErr('signup', err.Response.status))
         })
@@ -90,10 +91,11 @@ export const signup = userInfo => {
 export const loginStuff = credentials => {
     return dispatch => {
         axios.post('/auth/login', credentials).then(Response => {
-            const {token, user} = Response.data
+            console.log(Response.data)
+            const {token, player} = Response.data
             localStorage.token = token
-            localStorage.user = JSON.stringify(user)
-            dispatch(authenticate(user))
+            localStorage.player = JSON.stringify(player)
+            dispatch(authenticate(player))
         }).catch(err => {
             dispatch(authErr('signup', err.Response.status))
         })
@@ -104,7 +106,7 @@ export const logout = () => {
     console.log('hohoh')
     //delete token from local storage
     delete localStorage.token
-    delete localStorage.user    
+    delete localStorage.player    
     return {type: 'LOGOUT'}
 }
 

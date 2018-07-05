@@ -7,17 +7,17 @@ const auth = expressJwt({ secret: process.env.SECRET });
 
 playerRoutes.use(auth)
 
+// playerRoutes.route('/')
+//     .get((req, res) => {
+//         Player.find((err, players) => {
+//             if (err) return res.status(500).send(err)
+//             return res.status(200).send(players)
+//         })
+//     })
+
 playerRoutes.route('/')
     .get((req, res) => {
-        Player.find((err, players) => {
-            if (err) return res.status(500).send(err)
-            return res.status(200).send(players)
-        })
-    })
-
-playerRoutes.route('/:playerId')
-    .get((req, res) => {
-        Player.findOne({ _id: req.params.playerId }, (err, user) => {
+        Player.findOne({ _id: req.user._id }, (err, user) => {
             if (err) return res.status(500).send({ success: false, err })
             if (user === null) return res.status(400).send({ success: false, err: "User not found!" })
             return res.status(200).send({ success: true, user })
