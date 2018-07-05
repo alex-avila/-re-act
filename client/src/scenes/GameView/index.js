@@ -1,24 +1,26 @@
 import React, { Component } from 'react'
 
 import { connect } from 'react-redux'
+import { loadScores } from '../../redux/reducers/gamesReducer'
 
 import './index.css'
 
 class GameView extends Component {
     componentDidMount() {
-        // Get high score data from server
-        // this.props.getHighScores(this.props.match.params.id)
+        this.props.loadScores(this.props.match.params.id)
     }
 
     render() {
-        console.log(this.props)
         const game = this.props.games.find(game => game.url === this.props.match.params.id)
+        const scores = this.props.scores.map((score, i) => {
+            return <li key={score + i}>{score.player.username}: {score.score}</li>
+        })
         return (
             <div className="game-view utility-wrapper">
-                {
+                {/* {
                     game && 
                     <h1>{game.name}</h1>
-                }
+                } */}
                 <div>
                     {/* Image */}
                 </div>
@@ -28,9 +30,12 @@ class GameView extends Component {
                 <div>
                     {/* Description/Article */}
                 </div>
+                <div>
+                    {scores}
+                </div>
             </div>
         )
     }
 }
 
-export default connect(state => ({games: state.games}), {})(GameView)
+export default connect(state => ({games: state.games.games, scores: state.games.scores}), { loadScores })(GameView)

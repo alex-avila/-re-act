@@ -1,113 +1,176 @@
-import axios from 'axios';
+import axios from "axios";
 
-const profileAxios = axios.create()
+const profileAxios = axios.create();
 profileAxios.interceptors.request.use(config => {
-    const token = localStorage.getItem('token')
-    config.headers.Authorization = `Bearer ${token}`
-    return config
+    const token = localStorage.getItem("token");
+    config.headers.Authorization = `Bearer ${token}`;
+    return config;
 })
 
-const initalState = {
-    userName: '',
-    isAdmin: false,
-    isAuthenticated: false,
-    authErrCode: {
-        signup: '',
-        login: ''
-    },
-    loading: true
+export function signup(playerInfo) {
+    return dispatch => {
+        axios.post("/auth/signup", playerInfo)
+            .then(response => {
+                const { token, player } = response.data
+                localStorage.setItem("token", token)
+                localStorage.setItem("player", JSON.stringify(player))
+                dispatch(authenticate(player))
+                console.log(response.data);
+            })
+            .catch((err) => {
+                console.error(err);
+                dispatch(authError("signup", err.response.status));
+            })
+    }
 }
 
- const theAuthorator = (state = initalState, action) => {
-     switch(action.type){
-        case 'AUTHENTICATE':
-            return {
-                ...state,
-                ...action.player,
-                isAuthenticated: true,
-                authErrCode: initalState.authErrCode,
-                loading: false
-            }
-        case 'LOGOUT':
-            console.log('hey')
-            return{
-                ...initalState,
-                loading: false
-            }
-        case 'AUTH_ERROR':
-            return {
-                ...state,
-                authErrCode: {
-                    ...state.authErrCode,
-                    [action.key]: action.errCode
-                },
-                loading: false
-            }
-         default: return state
-     }
- }
+export function login(credentials) {
+    return dispatch => {
+        axios.post("/auth/login", credentials)
+            .then(response => {
+                const { token, player } = response.data;
+                localStorage.setItem("token", token)
+                localStorage.setItem("player", JSON.stringify(player))
+                dispatch(authenticate(player))
+            })
+            .catch((err) => {
+                console.error(err);
+                dispatch(authError("login", err.response.status));
+            })
+    }
+}
 
-const authenticate = player => {
-    console.log(player)
+export function authenticate(player) {
     return {
         type: 'AUTHENTICATE',
         player
     }
 }
 
-export const verify = () => {
-    return dispatch => {
-        profileAxios.get('/api/players').then(Response => {
-            const {user : player} = Response.data
-            dispatch(authenticate(player))
-        }).catch(err => {
-            dispatch(authErr('verify', err.Response))
-        })
+export function logout() {
+    localStorage.removeItem("token")
+    localStorage.removeItem("player")
+    return {
+        type: "LOGOUT"
     }
 }
 
-const authErr = (key, errCode) => {
+function authError(key, errCode) {
     return {
-        type: 'AUTH_ERROR',
+        type: "AUTH_ERROR",
         key,
         errCode
     }
 }
 
-export const signup = playerInfo => {
+export function verify() {
     return dispatch => {
-        axios.post('/auth/signup', playerInfo).then(Response => {
-            console.log(Response.data)
-            const {token, player} = Response.data
-            localStorage.token = token
-            localStorage.player = JSON.stringify(player)
-            dispatch(authenticate(player))
-        }).catch(err => {
-            dispatch(authErr('signup', err.Response.status))
-        })
+        profileAxios.get("/api/player")
+            .then(response => {
+                console.log(response.data)
+                let { player } = response.data;
+                dispatch(authenticate(player));
+            }).catch(err => {
+                dispatch(authError("verify", err.response.status));
+            });
     }
 }
 
-export const loginStuff = credentials => {
-    return dispatch => {
-        axios.post('/auth/login', credentials).then(Response => {
-            console.log(Response.data)
-            const {token, player} = Response.data
-            localStorage.token = token
-            localStorage.player = JSON.stringify(player)
-            dispatch(authenticate(player))
-        }).catch(err => {
-            dispatch(authErr('signup', err.Response.status))
-        })
+const initialState = {
+    username: '',
+    isAdmin: false,
+    authErrCode: {
+        signup: "",
+        login: ""
+    },
+    isAuthenticated: false
+}
+
+export default function reducer(state = initialState, action) {
+    switch (action.type) {
+        case "AUTHENTICATE":
+            return {
+                ...state,
+                ...action.player,
+                isAuthenticated: true
+            }
+        case 'LOGOUT':
+            return initialState
+        case "AUTH_ERROR":
+            return {
+                ...state,
+                authErrCode: {
+                    ...state.authErrCode,
+                    [action.key]: action.errCode
+                }
+            }
+        default:
+            return state;
     }
 }
 
-export const logout = () => {
-    console.log('hohoh')
-    //delete token from local storage
-    delete localStorage.token
-    delete localStorage.player    
-    return {type: 'LOGOUT'}
-}
+// const initialState = {
+//     username: "",
+//     isAdmin: false,
+//     isAuthenticated: false
+// }
 
-export default theAuthorator
+// export default function reducer(state = initialState, action) {
+//     switch (action.type) {
+//         case "AUTHENTICATE":
+//             return {
+//                 ...state,
+//                 ...action.user,
+//                 isAuthenticated: true
+//             }
+//         case "LOGOUT":
+//             return initialState;
+//         default:
+//             return state;
+//     }
+// }
+
+// export function authenticate(user) {
+//     return {
+//         type: "AUTHENTICATE",
+//         user  // pass the user for storage in Redux store
+//     }
+// }
+
+// export function signup(userInfo) {
+//     return dispatch => {
+//         axios.post("/auth/signup", userInfo)
+//             .then(response => {
+//                 const { token, user } = response.data;
+//                 localStorage.token = token
+//                 localStorage.user = JSON.stringify(user);
+//                 dispatch(authenticate(user));
+//             })
+//             .catch(err => {
+//                 console.error(err);
+//             })
+//     }
+// }
+
+// export function login(credentials) {
+//     return dispatch => {
+//         axios.post("/auth/login", credentials)
+//             .then(response => {
+//                 const { token, user } = response.data;
+//                 localStorage.token = token
+//                 localStorage.user = JSON.stringify(user);
+//                 dispatch(authenticate(user));
+//             })
+//             .catch((err) => {
+//                 console.error(err);
+//             });
+//     }
+// }
+
+// export function logout() {
+//     delete localStorage.token;
+//     delete localStorage.user;
+//     return {
+//         type: "LOGOUT"
+//     }
+// }
