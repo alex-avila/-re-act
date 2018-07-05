@@ -16,7 +16,7 @@ mongoose.connect('mongodb://localhost/re-act-arcade', (err) => {
 
 App.use("/api", expressJwt({secret: process.env.SECRET}));
 App.use("/api/players", require("./routes/playerRoutes"));
-App.use("/games", require('./routes/gameRoutes'))
+App.use("/api/games", require('./routes/gameRoutes'))
 
 App.use('/auth', require("./routes/authRoutes"))
 

@@ -35,7 +35,7 @@ class RPSLanding extends Component {
         <div className='dragon'></div>
         <div className="inContainer">
           <button
-            onClick={() => {this.handleToggle(), this.newButton()}}>{this.state.startButton}</button>
+            onClick={() => {this.handleToggle(); this.newButton()}}>{this.state.startButton}</button>
             {
               this.state.isToggled ? <RPS /> : null
             }

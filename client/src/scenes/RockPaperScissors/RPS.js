@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
-import index from './index.css'
+import './index.css'
 
-import Hero from './charComponents/Hero';
+// import Hero from './charComponents/Hero';
 
 export default class RPS extends Component {
   constructor(props) {
@@ -68,11 +68,11 @@ export default class RPS extends Component {
   };
 
   render() {
-    const { playerOne, playerTwo } = this.state
+    // const { playerOne, playerTwo } = this.state
 
-    const getChoiceClass = (player) => {
-      return player === 'Fire' ? 'red' : player === 'Water' ? 'blue' : 'green'
-    }
+    // const getChoiceClass = (player) => {
+    //   return player === 'Fire' ? 'red' : player === 'Water' ? 'blue' : 'green'
+    // }
 
     return (
       <div>
@@ -84,7 +84,7 @@ export default class RPS extends Component {
             <button onClick={() => this.handlePlayerCompare("Earth")}>Earth</button>
           </div>
           : null}
-        <button onClick={() => {this.handleGameFunction(), this.handleTimer()}}>Start</button>
+        <button onClick={() => {this.handleGameFunction(); this.handleTimer()}}>Start</button>
         {
           this.state.time === 0 &&
             <div style={ this.state.condition ? {display: 'flex', flexDirection: 'column'} : null}>

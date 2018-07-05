@@ -34,7 +34,7 @@ class Navbar extends Component {
                         isAuthenticated ?
                             <div>
                                 <Link to="/user">
-                                    <img width="25px" height="25px" src={`${gravatar}`}/>
+                                    <img style={{borderRadius: '50%'}} width="30px" height="30px" src={`${gravatar}`} alt="Player."/>
                                 </Link>
                                 <Button onClick={this.handleLogout}>Logout</Button>
                             </div> :

@@ -1,11 +1,17 @@
 import axios from 'axios';
 
 const profileAxios = axios.create()
-profileAxios.interceptors.request.use(config => {
-    const token = localStorage.getItem('token')
-    config.headers.Authorization = `Bearer ${token}`
-    return config
-})
+profileAxios.interceptors.request.use(
+    config => {
+        const token = localStorage.getItem('token')
+        if (token) {
+            config.headers.Authorization = `Bearer ${token}`
+        }
+        return config
+    }, err => {
+        return Promise.reject(err)
+    }
+)
 
 const initalState = {
     userName: '',
@@ -18,8 +24,8 @@ const initalState = {
     loading: true
 }
 
- const theAuthorator = (state = initalState, action) => {
-     switch(action.type){
+const theAuthorator = (state = initalState, action) => {
+    switch (action.type) {
         case 'AUTHENTICATE':
             return {
                 ...state,
@@ -29,8 +35,7 @@ const initalState = {
                 loading: false
             }
         case 'LOGOUT':
-            console.log('hey')
-            return{
+            return {
                 ...initalState,
                 loading: false
             }
@@ -43,12 +48,11 @@ const initalState = {
                 },
                 loading: false
             }
-         default: return state
-     }
- }
+        default: return state
+    }
+}
 
 const authenticate = player => {
-    console.log(player)
     return {
         type: 'AUTHENTICATE',
         player
@@ -57,12 +61,14 @@ const authenticate = player => {
 
 export const verify = () => {
     return dispatch => {
-        profileAxios.get('/api/players').then(Response => {
-            const {user : player} = Response.data
-            dispatch(authenticate(player))
-        }).catch(err => {
-            dispatch(authErr('verify', err.Response))
-        })
+        profileAxios.get("/api/players")
+            .then(response => {
+                const { user } = response.data;
+                dispatch(authenticate(user));
+            })
+            .catch(err => {
+                dispatch(authErr("verify", err.response.status));
+            })
     }
 }
 
@@ -76,38 +82,37 @@ const authErr = (key, errCode) => {
 
 export const signup = playerInfo => {
     return dispatch => {
-        axios.post('/auth/signup', playerInfo).then(Response => {
-            console.log(Response.data)
-            const {token, player} = Response.data
+        axios.post('/auth/signup', playerInfo).then(response => {
+            console.log("response was given")
+            const { token, player } = response.data
             localStorage.token = token
             localStorage.player = JSON.stringify(player)
             dispatch(authenticate(player))
         }).catch(err => {
-            dispatch(authErr('signup', err.Response.status))
+            dispatch(authErr('signup', err.response.status))
         })
     }
 }
 
 export const loginStuff = credentials => {
     return dispatch => {
-        axios.post('/auth/login', credentials).then(Response => {
-            console.log(Response.data)
-            const {token, player} = Response.data
+        axios.post('/auth/login', credentials).then(response => {
+            console.log("response was given")
+            const { token, player } = response.data
             localStorage.token = token
             localStorage.player = JSON.stringify(player)
             dispatch(authenticate(player))
         }).catch(err => {
-            dispatch(authErr('signup', err.Response.status))
+            dispatch(authErr('login', err.response.status))
         })
     }
 }
 
 export const logout = () => {
-    console.log('hohoh')
     //delete token from local storage
     delete localStorage.token
-    delete localStorage.player    
-    return {type: 'LOGOUT'}
+    delete localStorage.player
+    return { type: 'LOGOUT' }
 }
 
 export default theAuthorator
