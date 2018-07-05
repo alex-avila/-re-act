@@ -22,3 +22,34 @@
 .navbar__auth a:first-child {
     margin-right: 1em;
 }
+
+.navbar__user {
+    position: relative;
+    display: block;
+}
+
+.navbar__user img {
+    display: block;
+    cursor: pointer;
+}
+
+.navbar__user button {
+    padding: 0 1.618em;
+}
+
+.navbar__user__dropdown {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    background: #2E204A;
+    border: 1px solid #FDACFD;
+    /* padding: 0 1em; */
+    top: 40px;
+    right: 0;
+    transition: all 0.25s;
+}
+
+.dropped {
+    opacity: 1;
+    visibility: visible;
+}
