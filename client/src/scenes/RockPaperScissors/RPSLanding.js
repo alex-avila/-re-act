@@ -11,7 +11,8 @@ class RPSLanding extends Component {
     this.state = {
       playerOneWins: false,
       playerTwoWins: false,
-      playerTwo: ''
+      playerTwo: '',
+      startButton: 'Classic game!'
     };
     //bind here
   }
@@ -24,20 +25,26 @@ class RPSLanding extends Component {
     })
   }
 
+  newButton = () => {
+    this.setState({startButton: 'Start new game'})
+  }
+  
   render() {
     return (
-      <div className="gameContainer">
-        <button
-          onClick={() => {
-            this.handleToggle();
-          }}>Classic game!</button>
-          { 
-            this.state.isToggled ? <RPS /> : null
-          }
-          <button>Reset</button>
-          <p>Fire beats Earth,</p>
-          <p>Earth beats Water,</p>
-          <p>Water beats Fire</p>
+      <div className='gameContainer'>
+        <div className='dragon'></div>
+        <div className="inContainer">
+          <button
+            onClick={() => {this.handleToggle(), this.newButton()}}>{this.state.startButton}</button>
+            {
+              this.state.isToggled ? <RPS /> : null
+            }
+            <button>Reset</button>
+            <p>Fire beats Earth,</p>
+            <p>Earth beats Water,</p>
+            <p>Water beats Fire</p>
+        </div>
+        <div className='knight'></div>
       </div>
     );
   }
