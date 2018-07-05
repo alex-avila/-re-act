@@ -26,25 +26,29 @@ class RPSLanding extends Component {
   }
 
   newButton = () => {
-    this.setState({startButton: 'Start new game'})
+    this.setState({startButton: 'Reset'})
   }
   
   render() {
     return (
-      <div className='gameContainer'>
-        <div className='dragon'></div>
-        <div className="inContainer">
-          <button
-            onClick={() => {this.handleToggle(), this.newButton()}}>{this.state.startButton}</button>
-            {
-              this.state.isToggled ? <RPS /> : null
-            }
-            <button>Reset</button>
-            <p>Fire beats Earth,</p>
-            <p>Earth beats Water,</p>
-            <p>Water beats Fire</p>
+      <div className='page'>
+        <div className='gameContainer'>
+          <div className='dragon'></div>
+          <div className="inContainer">
+            <button
+              onClick={() => {this.handleToggle(), this.newButton()}}>{this.state.startButton}</button>
+              {
+                this.state.isToggled ? <RPS /> : null
+              }
+              <button>Reset</button>
+          </div>
+          <div className='knight'></div>
         </div>
-        <div className='knight'></div>
+        <div className='smileBomb'>
+          <p>Fire beats Earth,</p>
+          <p>Earth beats Water,</p>
+          <p>Water beats Fire</p>
+        </div>
       </div>
     );
   }

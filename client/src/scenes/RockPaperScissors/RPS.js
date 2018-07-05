@@ -79,18 +79,20 @@ export default class RPS extends Component {
         {this.state.istoggled ?
           <div>
             <div className="timer">{this.state.time}</div>
-            <button onClick={() => this.handlePlayerCompare("Fire")}>Fire</button>
-            <button onClick={() => this.handlePlayerCompare("Water")}>Water</button>
-            <button onClick={() => this.handlePlayerCompare("Earth")}>Earth</button>
+            <div className='compare-buttons'>
+              <button onClick={() => this.handlePlayerCompare("Fire")}>Fire</button>
+              <button onClick={() => this.handlePlayerCompare("Water")}>Water</button>
+              <button onClick={() => this.handlePlayerCompare("Earth")}>Earth</button>
+            </div>
           </div>
           : null}
         <button onClick={() => {this.handleGameFunction(), this.handleTimer()}}>Start</button>
         {
           this.state.time === 0 &&
             <div style={ this.state.condition ? {display: 'flex', flexDirection: 'column'} : null}>
+              <div className={getChoiceClass(playerOne)}>Player One: {this.state.playerOne}</div>
+              <div className={getChoiceClass(playerTwo)}>Player Two: {this.state.playerTwo}</div>
               <div>{this.state.results}</div>
-              <div className='p1-card'>Player One: {this.state.playerOne}</div>
-              <div className='p2-card'>Player Two: {this.state.playerTwo}</div>
             </div>
         }
       </div>
