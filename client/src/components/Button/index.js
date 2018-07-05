@@ -35,10 +35,10 @@ class Button extends Component {
             <Fragment>
                 {
                     this.props.basic ?
-                        <BasicButton border="none">
+                        <BasicButton onClick={this.props.onClick} border="none">
                             {this.props.children}
                         </BasicButton> :
-                        <GhostButton border="none">
+                        <GhostButton onClick={this.props.onClick} border="none">
                             {this.props.children}
                         </GhostButton>
                 }

@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux' 
+import { signup } from '../../redux/reducers/theAuthorator'
 
 import Button from '../../components/Button'
 
@@ -9,7 +11,7 @@ class SignUp extends Component {
         super(props)
         this.state = {
             inputs: {
-                username: '',
+                userName: '',
                 email: '',
                 password: ''
             }
@@ -28,6 +30,7 @@ class SignUp extends Component {
 
     handleSubmit = e => {
         e.preventDefault()
+        this.props.signup(this.state.inputs)
     }
 
     render() {
@@ -36,13 +39,13 @@ class SignUp extends Component {
                 <h2>Sign Up</h2>
                 <form onSubmit={this.handleSubmit} className="signup__form">
                     <div className="signup__form__inputs">
-                        <label name="username" >
+                        <label name="userName" >
                             <span>Username</span>
                             <input 
                                 type="text" 
-                                name="username" 
+                                name="userName" 
                                 onChange={this.handleChange} 
-                                value={this.state.inputs.username}
+                                value={this.state.inputs.userName}
                                 autoComplete="off"
                             />
                         </label>
@@ -74,4 +77,4 @@ class SignUp extends Component {
     }
 }
 
-export default SignUp
+export default connect(null, {signup}) (SignUp)
