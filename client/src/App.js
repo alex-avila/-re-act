@@ -25,7 +25,6 @@ class App extends Component {
 	componentDidMount() {
 		this.props.getGames()
 		this.props.verify()
-		this.props.updateScores('tic-tac-toe')
 	}
 
 	render() {

@@ -37,7 +37,7 @@ class RPSLanding extends Component {
           <button
             onClick={() => {this.handleToggle(); this.newButton()}}>{this.state.startButton}</button>
             {
-              this.state.isToggled ? <RPS /> : null
+              this.state.isToggled ? <RPS url={this.props.match.path.split('/')[1]}/> : null
             }
             <button>Reset</button>
             <p>Fire beats Earth,</p>

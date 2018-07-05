@@ -55,9 +55,22 @@ export const getGames = () => {
 }
 
 const setScores = scores => {
+    const sortedScores = scores.sort((a, b) => b.score - a.score)
+    // the reduce function makes sure that a player is only listed once on the scores list
+    // regardless of the them having multiple scores in the list
+    const reducedScores = sortedScores.reduce((final, score) => {
+        if (final.some(fScore => fScore.player.username === score.player.username)) {
+            return final
+        } else {
+            return [...final, score]
+        }
+    }, [])
+    // Only send top ten scores
+    // (one from each player and sorted descendingly)
+    const topTenScores = reducedScores.slice(0, 10)
     return {
         type: 'SET_SCORES',
-        scores
+        scores: topTenScores
     }
 }
 
@@ -72,8 +85,9 @@ export const loadScores = url => {
 }
 
 export const updateScores = (url, score) => {
+    const player = JSON.parse(localStorage.player)._id
     return dispatch => {
-        gameAxios.put(gameUrl + url, { highScores: { player: '5b3e04f945ec7bd044fd6b76', score: 8090 } })
+        gameAxios.put(gameUrl + url, { highScores: { player, score } })
             .then(response => {
                 dispatch(loadScores(url));
             })

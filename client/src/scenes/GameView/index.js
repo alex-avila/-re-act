@@ -12,15 +12,16 @@ class GameView extends Component {
 
     render() {
         const game = this.props.games.find(game => game.url === this.props.match.params.id)
-        const scores = this.props.scores.map((score, i) => {
+        const { scores } = this.props
+        const mappedScores = scores.map((score, i) => {
             return <li key={score + i}>{score.player.username}: {score.score}</li>
         })
         return (
             <div className="game-view utility-wrapper">
-                {/* {
+                {
                     game && 
-                    <h1>{game.name}</h1>
-                } */}
+                    <h2>{game.name}</h2>
+                }
                 <div>
                     {/* Image */}
                 </div>
@@ -30,9 +31,9 @@ class GameView extends Component {
                 <div>
                     {/* Description/Article */}
                 </div>
-                <div>
-                    {scores}
-                </div>
+                <ol>
+                    {mappedScores}
+                </ol>
             </div>
         )
     }
