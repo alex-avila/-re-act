@@ -15,9 +15,10 @@ mongoose.connect('mongodb://localhost/re-act-arcade', (err) => {
 })
 
 App.use("/api", expressJwt({secret: process.env.SECRET}));
-App.use("/players", require("./routes/playerRoutes"));
-// App.use("/api/player", require());
+App.use("/api/players", require("./routes/playerRoutes"));
 App.use("/games", require('./routes/gameRoutes'))
+
+App.use('/auth', require("./routes/authRoutes"))
 
 App.listen(9001, () => {
     console.log('this server is located on localhost 9001')
