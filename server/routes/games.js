@@ -19,11 +19,6 @@ gamesRoutes.post("/", (req, res) => {
 });
 
 gamesRoutes.get("/:gameId", (req, res) => {
-    // Game.findOne({ url: req.params.gameId }, (err, game) => {
-    //     if (err) return res.status(500).send(err);
-    //     if (!game) return res.status(404).send("No game found.");
-    //     return res.send(game);
-    // });
     Game.findOne({ url: req.params.gameId })
         .populate({
             path: 'highScores.player',

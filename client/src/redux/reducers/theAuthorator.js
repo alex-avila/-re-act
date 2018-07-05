@@ -15,10 +15,8 @@ export function signup(playerInfo) {
                 localStorage.setItem("token", token)
                 localStorage.setItem("player", JSON.stringify(player))
                 dispatch(authenticate(player))
-                console.log(response.data);
             })
             .catch((err) => {
-                console.error(err);
                 dispatch(authError("signup", err.response.status));
             })
     }
@@ -67,7 +65,6 @@ export function verify() {
     return dispatch => {
         profileAxios.get("/api/player")
             .then(response => {
-                console.log(response.data)
                 let { player } = response.data;
                 dispatch(authenticate(player));
             }).catch(err => {

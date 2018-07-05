@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 
+import { connect } from 'react-redux'
+import { updateScores } from '../../redux/reducers/gamesReducer'
+
 import GameMenu from './components/GameMenu'
 import GameGrid from './components/GameGrid'
 import WinModal from './components/WinModal'
@@ -39,6 +42,11 @@ class MemoryGame extends Component {
     }
 
     win = () => {
+        // Go to redux to update scores
+        const url = this.props.match.path.split('/')[1]
+        const score = Math.ceil(this.state.stars * 10000 / this.state.timer.getUTCSeconds())
+        this.props.updateScores(url, score)
+
         clearInterval(this.state.interval)
         const time = this.state.timer
         const defaultText = (
@@ -300,4 +308,4 @@ class MemoryGame extends Component {
     }
 }
 
-export default MemoryGame
+export default connect(null, { updateScores })(MemoryGame)
