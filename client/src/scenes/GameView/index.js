@@ -3,6 +3,8 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { loadScores } from '../../redux/reducers/gamesReducer'
 
+import Leaderboard from './components/Leaderboard'
+
 import './index.css'
 
 class GameView extends Component {
@@ -13,27 +15,13 @@ class GameView extends Component {
     render() {
         const game = this.props.games.find(game => game.url === this.props.match.params.id)
         const { scores } = this.props
-        const mappedScores = scores.map((score, i) => {
-            return <li key={score + i}>{score.player.username}: {score.score}</li>
-        })
         return (
             <div className="game-view utility-wrapper">
                 {
                     game && 
                     <h2>{game.name}</h2>
                 }
-                <div>
-                    {/* Image */}
-                </div>
-                <div>
-                    {/* Link to play */}
-                </div>
-                <div>
-                    {/* Description/Article */}
-                </div>
-                <ol>
-                    {mappedScores}
-                </ol>
+                <Leaderboard scores={scores}/>
             </div>
         )
     }

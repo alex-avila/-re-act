@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react'
 import styled from 'styled-components'
 
 const BaseButton = styled.button`
+    font-family: 'Share Tech Mono', monospace;
     background: none;
     border: none;
     outline: none;
