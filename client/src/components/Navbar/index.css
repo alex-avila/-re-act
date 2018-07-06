@@ -34,7 +34,7 @@
 }
 
 .navbar__user button {
-    padding: 0 1.618em;
+    padding: 1em 1.618em;
 }
 
 .navbar__user__dropdown {
@@ -43,7 +43,7 @@
     position: absolute;
     background: #2E204A;
     border: 1px solid #FDACFD;
-    /* padding: 0 1em; */
+    box-shadow: 0 3px 12px #362555;
     top: 40px;
     right: 0;
     transition: all 0.25s;
