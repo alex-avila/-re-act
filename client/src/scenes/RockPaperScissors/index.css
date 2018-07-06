@@ -44,9 +44,6 @@
     background: blueviolet;
 }
 
-
-
-
 .timer {
     /* height: 100px;
     width: 100px; */
@@ -179,20 +176,79 @@
 }
 
 .resultStyles {
-    display: flex;
+    display: grid;
+    /* align-content: space-between; */
+    gap: 1em;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-weight: 700;
 }
 
 .red {
-    color: tomato;
-    /* width: 75px; */
-    /* height: 50px;
-    background: url('./assets/brick.jpg') */
+    color: rgb(255, 239, 10);
+    height: 75px;
+    background: url('./assets/brick.jpg');
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.red p {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(220, 20, 60, 0.445);
+    padding: 25px 20px;
+    border: solid rgba(255, 255, 0, 0.5) 1px;
 }
 
 .green {
-    color: green;
+    color: gold;
+    height: 75px;
+    background: url('./assets/brick.jpg');
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.green p {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(34, 139, 34, 0.445);
+    padding: 25px 20px;
+    border: solid darkgoldenrod 1px;
 }
 
 .blue {
-    color: blue;
+    color: white;
+    height: 75px;
+    background: url('./assets/brick.jpg');
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.blue p {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 255, 0.445);
+    padding: 25px 20px;
+    border: solid whitesmoke 1px;
+}
+
+.score-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding: 1em 0;
+    width: 200px;
+    height: 75px;
+    background: url('./assets/brick.jpg');   
+}
+
+.score-flex p {
+    margin: 0;
 }
