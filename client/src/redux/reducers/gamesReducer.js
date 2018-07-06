@@ -87,6 +87,7 @@ export const loadScores = url => {
 export const updateScores = (url, score) => {
     const player = JSON.parse(localStorage.player)._id
     return dispatch => {
+        console.log(score)
         gameAxios.put(gameUrl + url, { highScores: { player, score } })
             .then(response => {
                 dispatch(loadScores(url));
