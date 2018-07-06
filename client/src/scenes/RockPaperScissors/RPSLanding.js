@@ -1,8 +1,11 @@
 import React, { Component } from "react";
 
-import './index.css';
+import "./index.css";
 
-import RPS from './RPS'
+import RPS from "./RPS";
+
+import dragon from "./assets/pkight.gif";
+import fireDragon from "./assets/fire-dragon.gif";
 
 class RPSLanding extends Component {
   constructor(props) {
@@ -11,8 +14,8 @@ class RPSLanding extends Component {
     this.state = {
       playerOneWins: false,
       playerTwoWins: false,
-      playerTwo: '',
-      startButton: 'Classic game!'
+      playerTwo: "",
+      nullSwitch: false
     };
     //bind here
   }
@@ -20,31 +23,41 @@ class RPSLanding extends Component {
   handleToggle = () => {
     this.setState(prevState => {
       return {
-          isToggled: !prevState.isToggled
-      }
-    })
-  }
+        isToggled: !prevState.isToggled
+      };
+    });
+  };
 
-  newButton = () => {
-    this.setState({startButton: 'Start new game'})
-  }
-  
+  handleAtkAni = attack => {
+    this.setState({ nullSwitch: !attack });
+  };
+
   render() {
     return (
-      <div className='gameContainer'>
-        <div className='dragon'></div>
-        <div className="inContainer">
-          <button
-            onClick={() => {this.handleToggle(); this.newButton()}}>{this.state.startButton}</button>
-            {
-              this.state.isToggled ? <RPS url={this.props.match.path.split('/')[1]}/> : null
-            }
-            <button>Reset</button>
-            <p>Fire beats Earth,</p>
-            <p>Earth beats Water,</p>
-            <p>Water beats Fire</p>
+      <div className="page">
+        <div className="gameContainer">
+          <div
+            className={this.state.nullSwitch ? 'pKnight' : 'pKnight-atk'}
+          />
+          <div className="inContainer">
+            <RPS
+              handleAtkAni={this.handleAtkAni}
+              url={this.props.match.path.split("/")[1]}
+            />
+            {/* <button
+              onClick={() => {this.handleToggle(); this.newButton()}}>{this.state.startButton}</button> */}
+            {/* {this.state.isToggled ? (
+              <RPS url={this.props.match.path.split("/")[1]} />
+            ) : null} */}
+            {/* <button>Reset</button> */}
+          </div>
+          <div className={this.state.nullSwitch ? 'demon' : 'demon-atk'} />
         </div>
-        <div className='knight'></div>
+        <div className='smileBomb'>
+          <p>Fire beats Earth,</p>
+          <p>Earth beats Water,</p>
+          <p>Water beats Fire</p>
+        </div>
       </div>
     );
   }
