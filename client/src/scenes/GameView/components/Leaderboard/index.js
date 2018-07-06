@@ -8,7 +8,7 @@ class Leaderboard extends Component {
     render() {
         const mappedScores = this.props.scores.map((score, i) => {
             // return <li key={score + i}>{score.player.username}: {score.score}</li>
-            return <PlayerScore key={score + i} {...score} rank={i} />
+            return <PlayerScore key={score + i} {...score} rank={i + 1} />
         })
         return (
             <div className="leaderboard">

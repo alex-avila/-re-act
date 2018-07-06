@@ -9,7 +9,7 @@ class PlayerScore extends Component {
             <li className="player-score">
                 <div className="player-score__player">
                     {
-                        !!rank &&
+                        rank !== 1 &&
                         <span className="player-score__rank">{rank}</span>
                     }
                     <img className="player-score__img" src={gravatar} alt="" />
