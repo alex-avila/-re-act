@@ -7,22 +7,22 @@ import rpsIcon from '../../icons/rps-icon.svg'
 
 const games = [
     {
-        name: 'Tic Tac Toe',
+        name: 'Fun.',
         url: 'tic-tac-toe',
         icon: ticTacToeIcon
     },
     {
-        name: 'Memory Game',
+        name: 'Concentration',
         url: 'card-match',
         icon: memoryGameIcon
     },
     {
-        name: 'Color Guess',
+        name: 'Colors',
         url: 'color-guess',
         icon: colorGuessIcon
     },
     {
-        name: 'Rock Paper Scissors',
+        name: 'Elements',
         url: 'RPS',
         icon: rpsIcon
     }

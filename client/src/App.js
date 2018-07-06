@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
-import { Switch, Route, Link, withRouter } from "react-router-dom"
+import { Switch, Route, Link, withRouter, Redirect } from "react-router-dom"
 
 import { connect } from 'react-redux'
 import { getGames, updateScores } from './redux/reducers/gamesReducer'
 import { verify } from './redux/reducers/theAuthorator'
+
+import ProtectedRoute from './components/ProtectedRoute'
 
 import Home from './scenes/Home'
 
@@ -29,8 +31,8 @@ class App extends Component {
 
 	render() {
 		const pathArr = this.props.location.pathname.split('/')
-		console.log()
-		const { games } = this.props
+		const { games, player: { isAuthenticated, loading } } = this.props
+		console.log(loading)
 		return (
 			<div className="wrapper">
 
@@ -42,29 +44,40 @@ class App extends Component {
 						<Navbar />
 				}
 
-				<Switch>
-					{/* Home */}
-					<Route exact path="/" render={(props) => <Home games={games} {...props} />} />
+				{
+					loading ?
+						<div></div> :
+						<Switch>
+							{/* Home */}
+							<Route exact path="/" render={(props) => <Home games={games} {...props} />} />
 
-					{/* Auth */}
-					{/* This needs to be above the GameView component route */}
-					<Route path="/login" component={Login} />
-					<Route path="/signup" component={SignUp} />
-					<Route path="/user" component={User} />
+							{/* Auth */}
+							{/* This needs to be above the GameView component route */}
+							<Route path="/login" render={
+								props => isAuthenticated ?
+									<Redirect to="/" /> :
+									<Login {...props} />
+							} />
+							<Route path="/signup" render={
+								props => isAuthenticated ?
+									<Redirect to="/" /> :
+									<SignUp {...props} />
+							} />
+							<ProtectedRoute path="/user" component={User} />
 
-					{/* All games share this as the details page */}
-					<Route exact path="/:id" render={(props) => <GameView {...props} />} />
+							{/* All games share this as the details page */}
+							<Route exact path="/:id" render={(props) => <GameView {...props} />} />
 
-					{/* Games */}
-					<Route path="/tic-tac-toe/play" component={TicTacToe} />
-					<Route path="/card-match/play" component={MemoryGame} />
-					<Route path='/RPS/play'  component={RPSLanding} />
-					<Route path='/color-guess/play' component={ColorGuess} />
-				</Switch>
-
+							{/* Games */}
+							<Route path="/tic-tac-toe/play" component={TicTacToe} />
+							<Route path="/card-match/play" component={MemoryGame} />
+							<Route path='/RPS/play' component={RPSLanding} />
+							<Route path='/color-guess/play' component={ColorGuess} />
+						</Switch>
+				}
 			</div>
 		)
 	}
 }
 
-export default withRouter(connect(state => ({ games: state.games.games }), { getGames, verify, updateScores })(App))
+export default withRouter(connect(state => ({ games: state.games.games, player: state.player }), { getGames, verify, updateScores })(App))
