@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { Switch, Route, Link, withRouter } from "react-router-dom"
 
 import { connect } from 'react-redux'
-import { getGames } from './redux/reducers/gamesReducer'
-import { verify} from './redux/reducers/theAuthorator'
+import { getGames, updateScores } from './redux/reducers/gamesReducer'
+import { verify } from './redux/reducers/theAuthorator'
 
 import Home from './scenes/Home'
 
@@ -67,4 +67,4 @@ class App extends Component {
 	}
 }
 
-export default withRouter(connect(state => ({ games: state.games }), { getGames, verify })(App))
+export default withRouter(connect(state => ({ games: state.games.games }), { getGames, verify, updateScores })(App))
