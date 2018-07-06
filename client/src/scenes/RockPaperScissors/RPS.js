@@ -180,7 +180,6 @@ class RPS extends Component {
               <button onClick={() => this.handlePlayerCompare("Earth")}>
                 <p>Earth</p>
               </button>
-              
             </div>
           </div>
         ) : null}
