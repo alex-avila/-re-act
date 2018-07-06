@@ -5,7 +5,7 @@ export class Squares extends Component {
         return(
             <div 
             className="coloredSquare" 
-            onClickCapture={this.props.squaresResult} 
+            onClick={this.props.squaresResult} 
             style={{backgroundColor: this.props.colors}}>
             </div>
         )
