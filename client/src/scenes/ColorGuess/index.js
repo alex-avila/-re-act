@@ -1,4 +1,8 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
+
+import { connect } from 'react-redux'
+import { updateScores } from '../../redux/reducers/gamesReducer'
+
 import Squares from "./Squares";
 import Countdown from "./Countdown";
 import FinishedGame from "./FinishedGame";
@@ -8,10 +12,10 @@ import Finished from "./Sounds/finished.wav";
 import "./index.css";
 
 class RGBGuesser extends Component {
-    constructor(){
+    constructor() {
         super();
         this.state = {
-            colors: [], 
+            colors: [],
             chosenCorrect: 0,
             isFinished: false,
             showCountdown: true,
@@ -24,11 +28,11 @@ class RGBGuesser extends Component {
         this.initialGameState();
     }
 
-     //loops though amount of squares
+    //loops though amount of squares
     //pushes 6 random colors to an array inside of loop and returns it
     displayRandom = () => {
         const colorArr = [];
-        for(let i = 0; i < 6; i++){
+        for (let i = 0; i < 6; i++) {
             colorArr.push(this.chooseRandom());
         }
         return colorArr;
@@ -42,15 +46,15 @@ class RGBGuesser extends Component {
     }
 
     //resets count and chooses 6 new colors to display on screen
-    restart = () => { 
+    restart = () => {
         this.initialGameState();
-        this.setState({ 
+        this.setState({
             chosenCorrect: 0,
         })
     }
 
-      //randomly chooses a rgb color
-      chooseRandom = () => {
+    //randomly chooses a rgb color
+    chooseRandom = () => {
         let rColor = Math.floor(Math.random() * 256);
         let gColor = Math.floor(Math.random() * 256);
         let bColor = Math.floor(Math.random() * 256);
@@ -64,12 +68,12 @@ class RGBGuesser extends Component {
     }
 
     timer = () => {
-            this.setState(prevState => {
-                return {
-                    isFinished: !prevState.isFinished,
-                    showCountdown: !prevState.showCountdown
-                }
-            })
+        this.setState(prevState => {
+            return {
+                isFinished: !prevState.isFinished,
+                showCountdown: !prevState.showCountdown
+            }
+        })
     }
 
     //restarts game after player finishes a game
@@ -83,12 +87,12 @@ class RGBGuesser extends Component {
         })
     }
 
-    render(){
+    render() {
         //compares background color of clicked square with rgb colored displayed
         //adds 1 to the chosenCorrect count
         //adds another six random colors after user chooses correctly
         let correctColor = this.pickSquare();
-        
+
         const chooseSquare = e => {
                 if(e.currentTarget.style.backgroundColor === correctColor){
                     this.initialGameState();
@@ -102,12 +106,19 @@ class RGBGuesser extends Component {
                     e.currentTarget.style.backgroundColor = "#36424E";
                 }
             }
+        }
 
-            let mappedSquares = this.state.colors.map((color, i) => {
-                return <Squares key={i} squaresResult={chooseSquare} colors={color}/>
-            })
+        let mappedSquares = this.state.colors.map((color, i) => {
+            return <Squares key={i} squaresResult={chooseSquare} colors={color} />
+        })
 
-        return(
+        if (this.state.isFinished && localStorage.player) {
+            const url = this.props.match.path.split('/')[1]
+            const score = this.state.chosenCorrect * 100
+            this.props.updateScores(url, score)
+        }
+
+        return (
             <div id="colorGuess">
                 {/* sound effects for correct guess and finished game */}
                 {this.state.isCorrect ? <Sound url={Correct} playStatus={Sound.status.PLAYING} volume={70}/> : null}
@@ -136,4 +147,4 @@ class RGBGuesser extends Component {
     }
 }
 
-export default RGBGuesser;
+export default connect(null, { updateScores })(RGBGuesser)

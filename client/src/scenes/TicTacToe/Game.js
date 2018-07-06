@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 
+import { connect } from 'react-redux'
+import { updateScores } from '../../redux/reducers/gamesReducer'
+
 import ai from './ai3'
 
 import resetIcon from './images/refresh.svg'
@@ -123,6 +126,12 @@ class Game extends Component {
             }
         }
         if (!this.availableBoxes.length) {
+            // this is a tie
+            // Go to redux to update scores
+            if (localStorage.player) {
+                const url = this.props.match.path.split('/')[1]
+                this.props.updateScores(url, 0)
+            }
             this.setState({ isBoardEmpty: true })
         } else {
             this.setState({ isBoardEmpty: false })
@@ -156,6 +165,13 @@ class Game extends Component {
     }
 
     win = winner => {
+        // Go to redux to update scores
+        if (localStorage.player) {
+            const url = this.props.match.path.split('/')[1]
+            const score = winner === 'X' ? 1 : -1       // x will never win though
+            this.props.updateScores(url, score)
+        }
+
         this.endGame = true
         this.setState({ winner })
     }
@@ -201,4 +217,4 @@ class Game extends Component {
     }
 }
 
-export default Game
+export default connect(null, { updateScores })(Game)

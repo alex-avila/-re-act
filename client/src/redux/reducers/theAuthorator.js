@@ -15,10 +15,8 @@ export function signup(playerInfo) {
                 localStorage.setItem("token", token)
                 localStorage.setItem("player", JSON.stringify(player))
                 dispatch(authenticate(player))
-                console.log(response.data);
             })
             .catch((err) => {
-                console.error(err);
                 dispatch(authError("signup", err.response.status));
             })
     }
@@ -67,7 +65,6 @@ export function verify() {
     return dispatch => {
         profileAxios.get("/api/player")
             .then(response => {
-                console.log(response.data)
                 let { player } = response.data;
                 dispatch(authenticate(player));
             }).catch(err => {
@@ -83,7 +80,8 @@ const initialState = {
         signup: "",
         login: ""
     },
-    isAuthenticated: false
+    isAuthenticated: false,
+    loading: true
 }
 
 export default function reducer(state = initialState, action) {
@@ -92,85 +90,25 @@ export default function reducer(state = initialState, action) {
             return {
                 ...state,
                 ...action.player,
-                isAuthenticated: true
+                isAuthenticated: true,
+                authErrCode: initialState.authErrCode,
+                loading: false
             }
         case 'LOGOUT':
-            return initialState
+            return {
+                ...initialState,
+                loading: false
+            }
         case "AUTH_ERROR":
             return {
                 ...state,
                 authErrCode: {
                     ...state.authErrCode,
                     [action.key]: action.errCode
-                }
+                },
+                loading: false
             }
         default:
             return state;
     }
 }
-
-// const initialState = {
-//     username: "",
-//     isAdmin: false,
-//     isAuthenticated: false
-// }
-
-// export default function reducer(state = initialState, action) {
-//     switch (action.type) {
-//         case "AUTHENTICATE":
-//             return {
-//                 ...state,
-//                 ...action.user,
-//                 isAuthenticated: true
-//             }
-//         case "LOGOUT":
-//             return initialState;
-//         default:
-//             return state;
-//     }
-// }
-
-// export function authenticate(user) {
-//     return {
-//         type: "AUTHENTICATE",
-//         user  // pass the user for storage in Redux store
-//     }
-// }
-
-// export function signup(userInfo) {
-//     return dispatch => {
-//         axios.post("/auth/signup", userInfo)
-//             .then(response => {
-//                 const { token, user } = response.data;
-//                 localStorage.token = token
-//                 localStorage.user = JSON.stringify(user);
-//                 dispatch(authenticate(user));
-//             })
-//             .catch(err => {
-//                 console.error(err);
-//             })
-//     }
-// }
-
-// export function login(credentials) {
-//     return dispatch => {
-//         axios.post("/auth/login", credentials)
-//             .then(response => {
-//                 const { token, user } = response.data;
-//                 localStorage.token = token
-//                 localStorage.user = JSON.stringify(user);
-//                 dispatch(authenticate(user));
-//             })
-//             .catch((err) => {
-//                 console.error(err);
-//             });
-//     }
-// }
-
-// export function logout() {
-//     delete localStorage.token;
-//     delete localStorage.user;
-//     return {
-//         type: "LOGOUT"
-//     }
-// }

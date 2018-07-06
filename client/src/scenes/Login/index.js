@@ -34,9 +34,17 @@ class Login extends Component {
     }
 
     render() {
+        let authErrCode = this.props.authErrCode.login
+        let errMsg = ''
+        if (authErrCode < 500 && authErrCode > 399) {
+            errMsg = 'Invalid username or password'
+        } else if (authErrCode > 499) {
+            errMsg = 'Server error!'
+        }
         return (
             <div className="login__wrapper">
                 <h2>Log In</h2>
+                { errMsg && <p>{errMsg}</p> }
                 <form onSubmit={this.handleSubmit} className="login__form">
                     <div className="login__form__inputs">
                         <label name="usename" >
@@ -67,4 +75,4 @@ class Login extends Component {
     }
 }
 
-export default connect(null, { login })(Login)
+export default connect(state => state.player, { login })(Login)
