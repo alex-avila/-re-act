@@ -1,14 +1,18 @@
 import React, { Component } from 'react'
 
+import { connect } from 'react-redux'
+
 class User extends Component {
     render() {
+        const { username, email, gravatar } = this.props.player
         return (
             <div className="utility-wrapper">
-                <h1>Look, A User Page</h1>
-                <p>Look, information about the user. Wowowowowo!</p>
+                <img src={gravatar} alt="Profile"/>
+                <h1>{username}</h1>
+                <p>Email: {email}</p>
             </div>
         )
     }
 }
 
-export default User
+export default connect(state => ({player: state.player}), {})(User)

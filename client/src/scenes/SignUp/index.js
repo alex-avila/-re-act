@@ -35,9 +35,17 @@ class SignUp extends Component {
     }
 
     render() {
+        let authErrCode = this.props.authErrCode.signup
+        let errMsg = ''
+        if (authErrCode < 500 && authErrCode > 399) {
+            errMsg = 'Invalid username or email'
+        } else if (authErrCode > 499) {
+            errMsg = 'Server error!'
+        }
         return (
             <div className="signup__wrapper">
                 <h2>Sign Up</h2>
+                { errMsg && <p>{errMsg}</p> }
                 <form onSubmit={this.handleSubmit} className="signup__form">
                     <div className="signup__form__inputs">
                         <label name="username" >
@@ -78,4 +86,4 @@ class SignUp extends Component {
     }
 }
 
-export default connect(null, { signup })(SignUp)
+export default connect(state => state.player, { signup })(SignUp)
