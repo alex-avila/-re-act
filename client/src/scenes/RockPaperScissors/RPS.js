@@ -93,7 +93,8 @@ class RPS extends Component {
           prevState => ({ p2hp: prevState.p2hp - prevState.crit }),
           () => {
             this.setState({
-              results: `Player one wins! ^.^\nPlayer 2 HP: ${this.state.p2hp}`
+              results: `Player one wins! ^.^`,
+              newHp: `Player 2 HP: ${this.state.p2hp}`
             });
             if (this.state.p1hp === 0 || this.state.p2hp === 0) {
               console.log("oehowiehgoiwhegoiwhegoih");
@@ -121,7 +122,8 @@ class RPS extends Component {
           prevState => ({ p1hp: prevState.p1hp - prevState.crit }),
           () => {
             this.setState({
-              results: `Player two wins! ^.^\nPlayer 1 HP: ${this.state.p1hp}`
+              results: `Player two wins! ^.^`,
+              newHp: `Player 1 HP: ${this.state.p1hp}`
             });
             if (this.state.p1hp === 0 || this.state.p2hp === 0) {
               if (!this.state.p1hp) {
@@ -154,7 +156,7 @@ class RPS extends Component {
     if (this.state.nullSwitch) {
       this.props.handleAtkAni(true);
     } else {
-      this.props.handleAtkAni(false);
+      this.props.handleAtkAni(false)
     }
 
     return (
@@ -205,12 +207,15 @@ class RPS extends Component {
           >
             <div className="resultStyles">
               <div className={getChoiceClass(playerOne)}>
-                Player One: {this.state.playerOne}
+                <p>Player One: {this.state.playerOne}</p>
               </div>
               <div className={getChoiceClass(playerTwo)}>
-                Player Two: {this.state.playerTwo}
+                <p>Player Two: {this.state.playerTwo}</p>
               </div>
-              <div>{this.state.results}</div>
+                <div className='score-flex'>
+                  <p>{this.state.results}</p>
+                  <p>{this.state.newHp}</p>
+                </div>
             </div>
           </div>
         )}

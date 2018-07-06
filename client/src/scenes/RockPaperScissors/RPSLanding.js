@@ -41,12 +41,6 @@ class RPSLanding extends Component {
               handleAtkAni={this.handleAtkAni}
               url={this.props.match.path.split("/")[1]}
             />
-            {/* <button
-              onClick={() => {this.handleToggle(); this.newButton()}}>{this.state.startButton}</button> */}
-            {/* {this.state.isToggled ? (
-              <RPS url={this.props.match.path.split("/")[1]} />
-            ) : null} */}
-            {/* <button>Reset</button> */}
           </div>
           <div className={this.state.nullSwitch ? 'demon' : 'demon-atk'} />
         </div>
