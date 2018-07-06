@@ -2,6 +2,9 @@ import React, {Component} from "react";
 import Squares from "./Squares";
 import Countdown from "./Countdown";
 import FinishedGame from "./FinishedGame";
+import Sound from "react-sound";
+import Correct from "./Sounds/correct.mp3";
+import Finished from "./Sounds/finished.wav";
 import "./index.css";
 
 class RGBGuesser extends Component {
@@ -11,8 +14,8 @@ class RGBGuesser extends Component {
             colors: [], 
             chosenCorrect: 0,
             isFinished: false,
-            timer: 30,
-            showCountdown: true
+            showCountdown: true,
+            isCorrect: false
         }
     }
 
@@ -44,7 +47,6 @@ class RGBGuesser extends Component {
         this.setState({ 
             chosenCorrect: 0,
         })
-        this.refs.result.innerHTML = "";
     }
 
       //randomly chooses a rgb color
@@ -90,14 +92,13 @@ class RGBGuesser extends Component {
         const chooseSquare = e => {
                 if(e.currentTarget.style.backgroundColor === correctColor){
                     this.initialGameState();
-                    this.refs.result.innerHTML = "";
                     this.setState(prevState => {
                         return {
                             chosenCorrect: prevState.chosenCorrect + 1,
+                            isCorrect: true
                         }
                     })
                 }else{
-                    this.refs.result.innerHTML = "WRONG!";
                     e.currentTarget.style.backgroundColor = "#36424E";
                 }
             }
@@ -108,12 +109,15 @@ class RGBGuesser extends Component {
 
         return(
             <div id="colorGuess">
+                {/* sound effects for correct guess and finished game */}
+                {this.state.isCorrect ? <Sound url={Correct} playStatus={Sound.status.PLAYING} volume={70}/> : null}
+                {this.state.isFinished ? <Sound url={Finished} playStatus={Sound.status.PLAYING} volume={70}/> : null}
+
                 {/* rendering countdown timer for the game */}
                 {this.state.showCountdown ? <div id="countdownTimer"><Countdown timesUp={this.timer}/></div> : null}
 
                 <h1 className="centerText">RGB Color Guesser</h1>
                 <h3 className="centerText">{correctColor}</h3>
-                <h3 ref="result" className="centerText"></h3>
                 <h3 className="centerText">Number Correct: <span>{this.state.chosenCorrect}</span></h3>
 
                 {/* rendering the six colored squares */}
