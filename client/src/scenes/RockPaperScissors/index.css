@@ -19,6 +19,34 @@
     position: relative;
 }
 
+
+.progress-bar {
+    height: 10px;
+    width: 100px;
+    background: palegoldenrod;
+}
+
+.progress {
+    height: 100%;
+    width: 75%;
+    background: tomato;
+}
+
+.progress-bar-2 {
+    height: 10px;
+    width: 100px;
+    background: gold;
+}
+
+.progress-2 {
+    height: 100%;
+    width: 75%;
+    background: blueviolet;
+}
+
+
+
+
 .timer {
     /* height: 100px;
     width: 100px; */
@@ -63,7 +91,7 @@
 .pKnight-atk {
     height: 400px;
     width: 300px;
-    background: url('./assets/fire-dragon.gif');
+    background: url('./assets/crit.gif');
     background-size: contain;
     background-repeat: no-repeat;
     transform: rotateY(180deg)
