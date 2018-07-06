@@ -6,7 +6,6 @@ import { Route, Redirect } from 'react-router-dom'
 class ProtectedRoute extends Component {
     render() {
         const { isAuthenticated, path, component: Component } = this.props
-        console.log(isAuthenticated)
         return (
             isAuthenticated ?
                 <Route path={path} component={Component} /> :

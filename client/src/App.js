@@ -32,7 +32,6 @@ class App extends Component {
 	render() {
 		const pathArr = this.props.location.pathname.split('/')
 		const { games, player: { isAuthenticated, loading } } = this.props
-		console.log(loading)
 		return (
 			<div className="wrapper">
 

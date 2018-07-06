@@ -9,10 +9,13 @@ body,
     margin: 0;
     height: 100%;
     font-family: 'Avenir', 'Arial', sans-serif;
-    /* font-family: 'Share Tech Mono', monospace; */
+    font-family: 'Share Tech Mono', monospace;
     font-size: 18px;
     background: linear-gradient(#5D4C79, #51436A);
-    color: #FEEAFF;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(252, 240, 252);
+    line-height: 1.5;
 }
 
 .utility-wrapper {

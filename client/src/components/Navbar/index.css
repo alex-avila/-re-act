@@ -26,15 +26,17 @@
 .navbar__user {
     position: relative;
     display: block;
+    text-align: center;
 }
 
 .navbar__user img {
     display: block;
     cursor: pointer;
+    border: 2px solid rgb(181, 153, 235);
 }
 
 .navbar__user button {
-    padding: 1em 1.618em;
+    padding: 0.618em 0.618em;
 }
 
 .navbar__user__dropdown {

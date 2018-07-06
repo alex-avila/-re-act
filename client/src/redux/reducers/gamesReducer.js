@@ -7,7 +7,7 @@ import rpsIcon from '../../icons/rps-icon.svg'
 
 const games = [
     {
-        name: 'Fun.',
+        name: 'Tic Tac Toe',
         url: 'tic-tac-toe',
         icon: ticTacToeIcon
     },
@@ -17,12 +17,12 @@ const games = [
         icon: memoryGameIcon
     },
     {
-        name: 'Colors',
+        name: 'RGB Colors',
         url: 'color-guess',
         icon: colorGuessIcon
     },
     {
-        name: 'Elements',
+        name: 'Elements 2000',
         url: 'RPS',
         icon: rpsIcon
     }
@@ -87,6 +87,7 @@ export const loadScores = url => {
 export const updateScores = (url, score) => {
     const player = JSON.parse(localStorage.player)._id
     return dispatch => {
+        console.log(score)
         gameAxios.put(gameUrl + url, { highScores: { player, score } })
             .then(response => {
                 dispatch(loadScores(url));
