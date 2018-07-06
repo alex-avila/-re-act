@@ -106,7 +106,7 @@ class RGBGuesser extends Component {
                     e.currentTarget.style.backgroundColor = "#36424E";
                 }
             }
-        }
+        
 
         let mappedSquares = this.state.colors.map((color, i) => {
             return <Squares key={i} squaresResult={chooseSquare} colors={color} />
