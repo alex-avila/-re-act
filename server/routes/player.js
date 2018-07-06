@@ -15,11 +15,11 @@ playerRoute.get("/", (req, res) => {
             .exec((err, games) => {
                 games.forEach(game => {
                     const gameScores = game.highScores
-                    .filter(score => {
+                        .filter(score => {
                             return score.player.username === player.username
                         })
                         .map(score => { if (score.score) { return score.score } })
-                    allScores = { ...allScores, [game.url]: [...gameScores]}
+                    allScores = { ...allScores, [game.url]: [...gameScores] }
                 })
                 if (err) return res.status(500).send({ success: false, err })
                 if (player === null) return res.status(400).send({ success: false, err: "Player not found!" })

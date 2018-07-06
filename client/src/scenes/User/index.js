@@ -53,12 +53,12 @@ class User extends Component {
             }
         }
         return (
-            <div className="utility-wrapper">
+            <div className="user utility-wrapper">
                 <div className="user-info">
                     <img src={gravatar} alt="Profile" />
                     <div>
-                        <p>Username: {username}</p>
-                        <p>Email: {email}</p>
+                        <p style={{fontWeight: 600, textTransform: 'uppercase'}}>{username}</p>
+                        {/* <p>{email}</p> */}
                     </div>
                 </div>
                 <div className="scores-list">
