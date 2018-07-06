@@ -4,9 +4,6 @@ import "./index.css";
 
 import RPS from "./RPS";
 
-import dragon from "./assets/pkight.gif";
-import fireDragon from "./assets/fire-dragon.gif";
-
 class RPSLanding extends Component {
   constructor(props) {
     super(props);
