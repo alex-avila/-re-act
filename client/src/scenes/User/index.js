@@ -17,7 +17,8 @@ class User extends Component {
     }
 
     render() {
-        const { username, email, gravatar, scores } = this.props.player
+        // const { username, email, gravatar, scores } = this.props.player
+        const { username, gravatar, scores } = this.props.player
         let gameScores = []
         if (scores) {
             for (let game in scores) {
