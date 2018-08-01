@@ -71,7 +71,7 @@ class SignUp extends Component {
                         <label name="password" >
                             <span>Password</span>
                             <input
-                                type="text"
+                                type="password"
                                 name="password"
                                 onChange={this.handleChange}
                                 value={this.state.inputs.password}
